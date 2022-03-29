@@ -1,37 +1,33 @@
 @font-face {
-  font-family: 'Open Sans', Arial;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local(''),
-       url('../fonts/OpenSans-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/OpenSans-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-       url('../fonts/OpenSans-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
-}
-@font-face {
-  font-family: 'Open Sans', Arial;
-  font-style: normal;
+  font-family: 'Open sans';
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+       url('../fonts/OpenSans-Bold.woff') format('woff');
   font-weight: 700;
-  font-display: swap;
-  src: local(''),
-       url('../fonts/OpenSans-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/OpenSans-Bold.woff') format('woff'),
-       url('../fonts/OpenSans-Bold.ttf') format('truetype'), /* Safari, Android, iOS */; /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open sans';
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+       url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
 
-@media (max-width: 390px) {
+@media (max-width: 320px) {
   body {
-    font-family: 'Open Sans', Arial;
+    font-family: 'Open Sans';
     font-size: 17px;
     background-color: #ffffff;
     margin: 0 auto;
   }
 
   header {
+
     display: flex;
-    justify-content: space-evenly;
-    padding-left: 75px;
+    justify-content: center;
+    padding-left: 10px;
     mix-blend-mode: normal;
     box-shadow: 0 1px 0 #ececec, inset 0px 1px 0px #ececec;
     min-height: 79px;
@@ -49,7 +45,7 @@
   .menu__hamburger-btn {
     display: flex; /* используем flex для центрирования содержимого */
     align-items: center; /* центрируем содержимое кнопки */
-    position: sticky;
+    position: absolute;
     top: 26px;
     left: 269px;
     width: 20px;
@@ -117,7 +113,6 @@
     grid-template-columns: 1fr;
     grid-column-gap: 0;
     grid-row-gap: 0;
-    padding-bottom: 30px;
   }
 
   .introduce__picture {
@@ -126,17 +121,17 @@
     justify-content: center;
     align-items: center;
     background-color: #c7c7c7;
-    background-image: url("../img/hero-mobile@2x.png");
-    min-height: 300px;
+    background-image: url("../img/hero-mobile@2x.jpg");
+    min-height: 283px;
   }
 
-  .intoduce__slogan {
-    font-weight: 700;
+
+  .introduce__slogan {
+    width: 260px;
     font-size: 27px;
     line-height: 30px;
     text-align: center;
-    padding-bottom: 30px;
-    mix-blend-mode: normal;
+    padding-bottom: 52px;
   }
 
   .introduce__interior {

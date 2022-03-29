@@ -18,7 +18,7 @@
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 390px) {
   body {
     font-family: 'Open Sans', Arial;
     font-size: 17px;
@@ -124,7 +124,7 @@
     justify-content: center;
     align-items: center;
     background-color: #c7c7c7;
-    background-image: url("../../img/hero-mobile@2x.png");
+    background-image: url("../source/img/hero-mobile@2x.png");
     min-height: 300px;
   }
 
@@ -453,7 +453,7 @@
   }
 
   .map::after {
-    content: url('..source/img/map-pin.svg');
+    content: url('../source/img/map-pin.svg');
     position: relative;
     bottom: 420px;
     left: 16px;

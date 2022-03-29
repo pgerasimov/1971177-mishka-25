@@ -272,7 +272,7 @@
     padding: 16px 70px;
     font-size: 18px;
     font-weight: 700;
-    line-height: 20px;
+    /* line-height: 20px; */
     color: #444444;
     text-transform: uppercase;
   }

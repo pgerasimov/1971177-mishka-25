@@ -453,7 +453,7 @@
   }
 
   .map::after {
-    content: url('../source/img/map-pin.svg');
+    content: url('../img/map-pin.svg');
     position: relative;
     bottom: 420px;
     left: 16px;

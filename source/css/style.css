@@ -264,6 +264,7 @@
   }
 
   .button {
+    font-family:'Open Sans', Arial;
     width: 100%;
     background: #ffffff;
     border: 2px solid #444444;

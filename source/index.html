@@ -4,13 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <script src="js/less.js" type="text/javascript"></script>
     <title>Mishka - Милые штуки ручнойработы для дома</title>
   </head>
   <body>
     <header class="header">
+      <div class="modal-window hidden">
+        <div class="modal-card">
+          <h1 class="modal-card__title">Добавить в корзину</h1>
+
+          <fieldset class="size-option">
+            <legend class="size-option__title">Выберите размер:</legend>
+            <ul class="size-option__options">
+              <li>
+                <input type="radio" name="product-size" id="s-size" value="s-size" checked />
+                <label for="s-size">S</label>
+              </li>
+              <li>
+                <input type="radio" name="product-size" id="m-size" value="m-size" />
+                <label for="m-size">M</label>
+              </li>
+              <li>
+                <input type="radio" name="product-size" id="l-size" value="l-size" />
+                <label for="l-size">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="modal-card__button">Добавить</button>
+        </div>
+      </div>
         <a class="link" href="/source/index.html"><img src="img/mishka-logo-mobile.svg" alt="logo" class="header__logo"></a>
       <nav class="menu">
         <div class="menu__hamburger-menu">
@@ -35,8 +58,8 @@
         </header>
     <main>
       <section class="additional-menu">
-       <a class="link" href>
-         <div class="additional-menu__interior">
+        <a class="link" href="">
+        <div class="additional-menu__interior">
           <span class="additional-menu__interior-text">Предметы интерьера</span>
           <img src="img/interior.svg" alt="Предметы интерьера">
         </div></a>
@@ -79,7 +102,7 @@
         <hr />
       </div>
       <section class="about-info">
-        <h2 class="titile">Коротко о нас:</h2>
+        <h2 class="title">Коротко о нас:</h2>
         <div class="about-info__wrapper">
           <div class="about-info__flower-wrapper">
             <img src="img/flower.svg" alt="Экологически чистые материалы">
@@ -126,7 +149,7 @@
         <div class="reviews-navigation">
           <button class="reviews-navigation__left-arrow" type="button">
             <img src="img/huge-arrow-left.svg" alt="Назад"></button>
-           <button class="reviews-navigation__right-arrow" type="button">
+            <button class="reviews-navigation__right-arrow" type="button">
             <img src="img/huge-arrow-right.svg" alt="Вперед"></button>
         </div>
         <div class="reviews__button">

@@ -11,9 +11,7 @@
   </head>
   <body>
     <header class="header">
-      <picture class="header__logo">
-        <a class="link" href="/source/index.html"><img src="img/mishka-logo-mobile.svg" alt="logo"></a>
-      </picture>
+        <a class="link" href="/source/index.html"><img src="img/mishka-logo-mobile.svg" alt="logo" class="header__logo"></a>
       <nav class="menu">
         <div class="menu__hamburger-menu">
           <input id="menu__toggle" type="checkbox" />
@@ -36,13 +34,14 @@
       </section>
         </header>
     <main>
-      <section class="additional_menu">
-       <a class="link" href> <div class="introduce__interior">
-          <span class="additional_menu__interior-text">Предметы интерьера</span>
+      <section class="additional-menu">
+       <a class="link" href>
+         <div class="additional-menu__interior">
+          <span class="additional-menu__interior-text">Предметы интерьера</span>
           <img src="img/interior.svg" alt="Предметы интерьера">
         </div></a>
-        <a class="link" href> <div class="introduce__toys">
-          <span class="additional_menu__toy-text additional_menu__toy-text--padding">Детские игрушки</span>
+        <a class="link" href> <div class="additional-menu__toys">
+          <span class="additional-menu__toy-text additional-menu__toy-text--padding">Детские игрушки</span>
           <img src="img/toy.svg" alt="Детские игрушки">
         </div></a>
       </section>
@@ -125,10 +124,10 @@
           <span class="reviews-contacts__email">@misssssiskras</span>
         </div>
         <div class="reviews-navigation">
-          <button class="reviews-navigation__left-arrow">
-            <img src="img/huge-arrow-left.svg" alt="Назад">
-           <button class="reviews-navigation__right-arrow">
-            <img src="img/huge-arrow-right.svg" alt="Вперед">
+          <button class="reviews-navigation__left-arrow" type="button">
+            <img src="img/huge-arrow-left.svg" alt="Назад"></button>
+           <button class="reviews-navigation__right-arrow" type="button">
+            <img src="img/huge-arrow-right.svg" alt="Вперед"></button>
         </div>
         <div class="reviews__button">
           <button class="button" type="submit">Написать</button>

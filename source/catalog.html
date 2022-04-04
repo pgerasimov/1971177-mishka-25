@@ -21,11 +21,11 @@
             <span></span>
           </label>
           <ul class="menu__menu-box">
-            <li><a href="" class="menu-item">Каталог товаров</a></li>
-            <li><a href="" class="menu-item">Вязание не заказ</a></li>
-            <li><a href="" class="menu-item">Поиск по сайту</a></li>
-            <li><a href="" class="menu-item">Каталог товаров</a></li>
-            <li><a href="" class="menu-item">Корзина: пока пуста</a></li>
+            <li><a href="" class="menu__item">Каталог товаров</a></li>
+            <li><a href="" class="menu__item">Вязание не заказ</a></li>
+            <li><a href="" class="menu__item">Поиск по сайту</a></li>
+            <li><a href="" class="menu__item">Каталог товаров</a></li>
+            <li><a href="" class="menu__item">Корзина: пока пуста</a></li>
           </ul>
         </div>
       </nav>
@@ -38,44 +38,45 @@
         <div class="catalog__wrapper">
 
           <div class="product-card">
-            <img src="/source/img/catalog-photo__rabbit.jpg" width="260" height="195">
+            <a class="link" href=""><img src="/source/img/catalog-photo__rabbit.jpg" width="260" height="195"></a>
             <div class="product-information">
-              <h3 class="product-information__title">Зайчик-попрыгайчик</h3>
+            <a class="link" href=""> <h3 class="product-information__title">Зайчик-попрыгайчик</h3></a>
               <p class="product-information__description">Рост 30 см, вес 200 г</p>
             </div>
             <div class="product-price">
               <p class="price">1 200 руб.</p>
-              <img src="/source/img/icon_cart.svg" alt="В корзину" />
+              <img class="price--add-to-cart" src="/source/img/icon_cart.svg" alt="В корзину" />
             </div>
           </div>
 
           <div class="product-card">
-            <img src="/source/img/catalog-photo__basket.jpg" width="260" height="195">
+            <a class="link" href=""> <img src="/source/img/catalog-photo__basket.jpg" width="260" height="195"></a>
             <div class="product-information">
-              <h3 class="product-information__title">Корзинка для белья</h3>
+              <a class="link" href="">  <h3 class="product-information__title">Корзинка для белья</h3></a>
               <p class="product-information__description">Диаметр 15 см, высота 10 см</p>
             </div>
             <div class="product-price">
               <p class="price">690 руб.</p>
-              <img src="/source/img/icon_cart.svg" alt="В корзину" />
+              <img class="price--add-to-cart" src="/source/img/icon_cart.svg" alt="В корзину" />
             </div>
           </div>
 
           <div class="product-card">
-            <img src="/source/img/catalog-photo__big-basket.jpg" width="260" height="195">
+            <a class="link" href=""> <img src="/source/img/catalog-photo__big-basket.jpg" width="260" height="195"></a>
             <div class="product-information">
-              <h3 class="product-information__title product-information__title--small-width">Большая корзинка для игрушек</h3>
+              <a class="link" href="">  <h3 class="product-information__title product-information__title--small-width">Большая корзинка для игрушек</h3></a>
               <p class="product-information__description">Диаметр 30 см, высота 30 см</p>
             </div>
             <div class="product-price">
               <p class="price">1 500 руб.</p>
-              <img src="/source/img/icon_cart.svg" alt="В корзину" />
+              <img class="price--add-to-cart" src="/source/img/icon_cart.svg" alt="В корзину" />
             </div>
           </div>
 
           <div class="product-video">
             <p class="product-video__title">Процесс производства</p>
-            <div class="video"><img src="/source/img/icon-play.svg" width="95" height="71"/>
+            <div class="video">
+              <img src="/source/img/icon-play.svg" width="95" height="71"/>
             </div>
               <p class="product-video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <button class="button" type="submit">Сделать заказ</button>
@@ -88,12 +89,12 @@
         <img
           src="img/social-icon__vk.svg"
           alt="Группа Вконтакте"
-          class="social-wrapper__social-icon social-inst"
+          class="social-wrapper__social-icon social-vk"
         />
         <img
           src="img/social-icon__youtube.svg"
           alt="Канал на Ютубе"
-          class="social-wrapper__social-icon social-facebook"
+          class="social-wrapper__social-icon social-youtube"
         />
         <img
           src="img/social-icon__tg.svg"

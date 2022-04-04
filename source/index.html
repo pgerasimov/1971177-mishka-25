@@ -11,9 +11,7 @@
   </head>
   <body>
     <header class="header">
-      <picture class="header__logo">
-        <img src="img/mishka-logo-mobile.svg" alt="logo">
-      </picture>
+        <a class="link" href="/source/index.html"><img src="img/mishka-logo-mobile.svg" alt="logo" class="header__logo"></a>
       <nav class="menu">
         <div class="menu__hamburger-menu">
           <input id="menu__toggle" type="checkbox" />
@@ -21,28 +19,31 @@
             <span></span>
           </label>
           <ul class="menu__menu-box">
-            <li><a href="" class="menu-item">Каталог товаров</a></li>
-            <li><a href="" class="menu-item">Вязание не заказ</a></li>
-            <li><a href="" class="menu-item">Поиск по сайту</a></li>
-            <li><a href="" class="menu-item">Каталог товаров</a></li>
-            <li><a href="" class="menu-item">Корзина: пока пуста</a></li>
+            <li><a href="" class="menu__item">Каталог товаров</a></li>
+            <li><a href="" class="menu__item">Вязание не заказ</a></li>
+            <li><a href="" class="menu__item">Поиск по сайту</a></li>
+            <li><a href="" class="menu__item">Каталог товаров</a></li>
+            <li><a href="" class="menu__item">Корзина: пока пуста</a></li>
           </ul>
         </div>
       </nav>
-    </header>
-    <main>
       <section class="introduce">
         <div class="introduce__picture">
           <h1 class="introduce__slogan">Милые штуки <br />ручной<br /> работы для дома</h1>
         </div>
-        <div class="introduce__interior">
-          <span class="introduce__interior-text">Предметы интерьера</span>
+      </section>
+        </header>
+    <main>
+      <section class="additional-menu">
+       <a class="link" href>
+         <div class="additional-menu__interior">
+          <span class="additional-menu__interior-text">Предметы интерьера</span>
           <img src="img/interior.svg" alt="Предметы интерьера">
-        </div>
-        <div class="introduce__toys">
-          <span class="introduce__toy-text introduce__toy-text--padding">Детские игрушки</span>
+        </div></a>
+        <a class="link" href> <div class="additional-menu__toys">
+          <span class="additional-menu__toy-text additional-menu__toy-text--padding">Детские игрушки</span>
           <img src="img/toy.svg" alt="Детские игрушки">
-        </div>
+        </div></a>
       </section>
       <section class="week-product">
         <div class="week-product__header">
@@ -123,12 +124,10 @@
           <span class="reviews-contacts__email">@misssssiskras</span>
         </div>
         <div class="reviews-navigation">
-          <div class="reviews-navigation__left-arrow">
-            <img src="img/huge-arrow-left.svg" alt="Назад">
-          </div>
-          <div class="reviews-navigation__right-arrow">
-            <img src="img/huge-arrow-right.svg" alt="Вперед">
-          </div>
+          <button class="reviews-navigation__left-arrow" type="button">
+            <img src="img/huge-arrow-left.svg" alt="Назад"></button>
+           <button class="reviews-navigation__right-arrow" type="button">
+            <img src="img/huge-arrow-right.svg" alt="Вперед"></button>
         </div>
         <div class="reviews__button">
           <button class="button" type="submit">Написать</button>
@@ -160,14 +159,26 @@
     </main>
     <footer class="footer">
       <div class="social-wrapper">
-          <img src="img/social-icon__vk.svg" alt="Группа Вконтакте" class="social-wrapper__social-icon social-inst">
-          <img src="img/social-icon__youtube.svg" alt="Канал на Ютубе" class="social-wrapper__social-icon social-facebook">
-          <img src="img/social-icon__tg.svg" alt="Група в Телеграмм"  class="social-wrapper__social-icon">
+        <img
+          src="img/social-icon__vk.svg"
+          alt="Группа Вконтакте"
+          class="social-wrapper__social-icon social-vk"
+        />
+        <img
+          src="img/social-icon__youtube.svg"
+          alt="Канал на Ютубе"
+          class="social-wrapper__social-icon social-youtube"
+        />
+        <img
+          src="img/social-icon__tg.svg"
+          alt="Група в Телеграмм"
+          class="social-wrapper__social-icon"
+        />
       </div>
-        <div class="developer">
-          <h2 class="developer__titile">Разработано</h2>
-          <img src="img/htmlacademy.svg" alt="htmlacademy">
-        </div>
+      <div class="developer">
+        <h2 class="developer__titile">Разработано</h2>
+        <img src="img/htmlacademy.svg" alt="htmlacademy" />
+      </div>
     </footer>
   </body>
 </html>

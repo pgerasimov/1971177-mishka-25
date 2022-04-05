@@ -13,6 +13,30 @@
 
 <body>
   <header class="header">
+    <div class="modal-window">
+      <div class="modal-card">
+        <h1 class="modal-card__title">Добавить в корзину</h1>
+
+        <fieldset class="size-option">
+          <legend class="size-option__title">Выберите размер:</legend>
+          <ul class="size-option__options">
+            <li>
+              <input type="radio" name="product-size" id="s-size" value="s-size" checked />
+              <label for="s-size">S</label>
+            </li>
+            <li>
+              <input type="radio" name="product-size" id="m-size" value="m-size" />
+              <label for="m-size">M</label>
+            </li>
+            <li>
+              <input type="radio" name="product-size" id="l-size" value="l-size" />
+              <label for="l-size">L</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="modal-card__button">Добавить</button>
+      </div>
+    </div>
     <a class="link" href="/source/index.html"><img src="img/mishka-logo-mobile.svg" alt="logo"
         class="header__logo" /></a>
     <nav class="menu">
@@ -37,6 +61,7 @@
     </section>
   </header>
   <main>
+
     <section class="additional-menu">
       <a class="link" href>
         <div class="additional-menu__interior">
@@ -176,6 +201,7 @@
       <img src="img/htmlacademy.svg" alt="htmlacademy" />
     </div>
   </footer>
+  </div>
 </body>
 
 </html>

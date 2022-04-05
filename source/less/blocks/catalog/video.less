@@ -1,0 +1,19 @@
+.video {
+  background-image: url("/img/video-mobile__backgorund.jpg");
+  background-color: #f1f1f1;
+  min-height: 150px;
+}
+
+.video > img {
+  position: relative;
+  left: 45px;
+  top: 35px;
+}
+
+.video::before {
+  z-index: 999;
+  position: relative;
+  left: 118px;
+  top: 20px;
+  content: url("/img/play-symbol.svg");
+}

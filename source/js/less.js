@@ -7,7 +7,7 @@
  *
  * @license Apache-2.0
  */
- !(function (e, t) {
+!(function (e, t) {
   "object" == typeof exports && "undefined" != typeof module
     ? (module.exports = t())
     : "function" == typeof define && define.amd

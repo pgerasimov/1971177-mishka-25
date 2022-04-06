@@ -1,16 +1,19 @@
 
 .social-wrapper {
   justify-self: center;
-  max-width: 260px;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   grid-area: 1 / 1 / 2 / 2;
   border-bottom: 1px solid #e5e5e5;
+  padding: 10% 0;
+  width: 80%;
 }
 
-.social-wrapper__social-icon {
+.social-wrapper__social-icon:not(:first-child) {
   width: 22px;
   height: 21px;
-  padding-right: 17px;
+  padding-left: 20%;
+
 }

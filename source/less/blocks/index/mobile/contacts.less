@@ -1,0 +1,38 @@
+@media screen and (max-width: 320px) {
+
+  .contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .contacts__wrapper {
+    grid-area: 1 / 1 / 2 / 2;
+    .flex-column;
+    align-items: start;
+    width: 83%;
+  }
+
+  .contacts__email {
+    display: flex;
+    flex-direction: row;
+    grid-area: 2 / 1 / 3 / 2;
+    min-width: 76px;
+  }
+
+  .contacts__address {
+    align-self: flex-end;
+    display: flex;
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .contacts__email-title,
+  .contacts__address-title {
+    padding-right: 40px;
+  }
+}
+

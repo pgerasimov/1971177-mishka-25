@@ -6,42 +6,61 @@
 @import "../less/blocks/general/link.less";
 @import "../less/blocks/general/hidden.less";
 @import "../less/blocks/general/title.less";
-@import "../less/blocks/general/wrapper.less";
 
-//Mobile General imports
-@import "blocks/general/Mobile/footer.less";
-@import "blocks/general/Mobile/header.less";
-@import "blocks/general/Mobile/menu.less";
-@import "blocks/general/Mobile/modal.less";
-@import "blocks/general/Mobile/social-wrapper.less";
-@import "blocks/general/Mobile/developer.less";
-@import "blocks/general/Mobile/header-section.less";
-@import "blocks/general/Mobile/button.less";
-@import "blocks/general/Mobile/last-button.less";
-@import "blocks/general/Mobile/small-button.less";
+//Mobile imports
+@media screen and (max-width: 320px) {
+  // General
+  @import "blocks/general/Mobile/footer.less";
+  @import "blocks/general/Mobile/header.less";
+  @import "blocks/general/Mobile/menu.less";
+  @import "blocks/general/Mobile/modal.less";
+  @import "blocks/general/Mobile/social-wrapper.less";
+  @import "blocks/general/Mobile/developer.less";
+  @import "blocks/general/Mobile/header-section.less";
+  @import "blocks/general/Mobile/button.less";
+  @import "blocks/general/Mobile/last-button.less";
+  @import "blocks/general/Mobile/small-button.less";
+  @import "blocks/general/Mobile/wrapper-mobile.less";
 
-//Mobile Index imports
-@import "blocks/index/mobile/about-info.less";
-@import "blocks/index/mobile/additional-menu.less";
-@import "blocks/index/mobile/contacts.less";
-@import "blocks/index/mobile/introduce.less";
-@import "blocks/index/mobile/map.less";
-@import "blocks/index/mobile/reviews.less";
-@import "blocks/index/mobile/week-product.less";
-@import "blocks/index/mobile/reviews-body.less";
-@import "blocks/index/mobile/reviews-contacts.less";
-@import "blocks/index/mobile/reviews-navigation.less";
+  // Index
+  @import "blocks/index/mobile/about-info.less";
+  @import "blocks/index/mobile/additional-menu.less";
+  @import "blocks/index/mobile/contacts.less";
+  @import "blocks/index/mobile/introduce.less";
+  @import "blocks/index/mobile/map.less";
+  @import "blocks/index/mobile/reviews.less";
+  @import "blocks/index/mobile/week-product.less";
+  @import "blocks/index/mobile/reviews-body.less";
+  @import "blocks/index/mobile/reviews-contacts.less";
+  @import "blocks/index/mobile/reviews-navigation.less";
 
-//Mobile Catalog imports
-@import "blocks/catalog/mobile/catalog.less";
-@import "blocks/catalog/mobile/product-card.less";
-@import "blocks/catalog/mobile/product-video.less";
-@import "blocks/catalog/mobile/video.less";
-@import "blocks/catalog/mobile/product-information.less";
-@import "blocks/catalog/mobile/product-price.less";
-@import "blocks/catalog/mobile/price";
+  // Catalog
+  @import "blocks/catalog/mobile/catalog.less";
+  @import "blocks/catalog/mobile/product-card.less";
+  @import "blocks/catalog/mobile/product-video.less";
+  @import "blocks/catalog/mobile/video.less";
+  @import "blocks/catalog/mobile/product-information.less";
+  @import "blocks/catalog/mobile/product-price.less";
+  @import "blocks/catalog/mobile/price";
 
-//Mobile Form imports
-@import "blocks/form/mobile/form.less";
-@import "blocks/form/mobile/form-text.less";
-@import "blocks/form/mobile/form-title.less";
+  // Form
+  @import "blocks/form/mobile/form.less";
+  @import "blocks/form/mobile/form-text.less";
+  @import "blocks/form/mobile/form-title.less";
+}
+
+// Tablet imports
+@media screen and (min-width: 321px) and (max-width: 768px) {
+
+  // General
+  @import "blocks/general/tablet/header.less";
+  @import "blocks/general/tablet/menu.less";
+  @import "blocks/general/tablet/wrapper-tablet.less";
+  @import "blocks/general/tablet/header-section";
+  @import "blocks/general/tablet/zig-zag";
+
+  // Catalog
+  @import "blocks/catalog/tablet/catalog.less";
+  @import "blocks/catalog/tablet/product-card.less";
+
+}

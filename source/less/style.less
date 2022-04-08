@@ -5,11 +5,10 @@
 @import "../less/blocks/general/body.less";
 @import "../less/blocks/general/link.less";
 @import "../less/blocks/general/hidden.less";
-@import "../less/blocks/general/title.less";
 @import "blocks/general/mobile/footer.less";
 
 //mobile imports
-@media (min-width: 1px) and (max-width: 767px) {
+@media (min-width: 200px) and (max-width: 767px) {
   // General
   @import "blocks/general/mobile/header.less";
   @import "blocks/general/mobile/menu.less";
@@ -21,6 +20,8 @@
   @import "blocks/general/mobile/last-button.less";
   @import "blocks/general/mobile/small-button.less";
   @import "blocks/general/mobile/wrapper-mobile.less";
+  @import "blocks/general/mobile/zig-zag.less";
+  @import "blocks/general/mobile/title.less";
 
   // Index
   @import "blocks/index/mobile/about-info.less";
@@ -51,7 +52,6 @@
 }
 // Tablet imports
 
-
 @media (min-width: 768px) and (max-width: 1024px) {
   // General
   @import "blocks/general/tablet/header.less";
@@ -62,6 +62,7 @@
   @import "blocks/general/tablet/social-wrapper.less";
   @import "blocks/general/tablet/footer.less";
   @import "blocks/general/tablet/developer.less";
+  @import "blocks/general/tablet/title.less";
 
 
   // Index

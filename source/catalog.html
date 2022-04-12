@@ -12,23 +12,25 @@
 <body>
 <header class="header">
   <div class="wrapper">
-    <a class="link" href="index.html"><img src="/img/mishka-logo-tablet.svg" alt="logo"
-                                           class="header__logo header__logo--tablet"/></a>
-    <a class="link" href="index.html"><img src="/img/mishka-logo-mobile.svg" alt="logo"
-                                           class="header__logo header__logo--mobile"/></a>
+    <div class="header__logo--wrapper">
+      <a class="link" aria-label="Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/desktop/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/tablet/mishka-logo-tablet.svg">
+          <img class="header__logo" src="img/mobile/mishka-logo-mobile.svg"
+               alt="Логотип сайта Мишка">
+        </picture>
+      </a>
+    </div>
     <nav class="menu">
-      <div class="menu__hamburger-menu">
-        <input id="menu__toggle" type="checkbox" class="menu__toggle">
-        <label class="menu__hamburger-btn" for="menu__toggle">
-          <span></span>
-        </label>
-        <ul class="menu__menu-box">
-          <li class="menu__item"><a href="" class="menu__link menu__link--padding">Каталог товаров</a></li>
-          <li class="menu__item"><a href="" class="menu__link menu__link--padding">Вязание не заказ</a></li>
-          <li class="menu__item"><a href="" class="menu__link"><img src="img/mobile/search.svg" class="menu__item-image"> Поиск по сайту</a></li>
-          <li class="menu__item"><a href="" class="menu__link"><img src="img/mobile/cart.svg" class="menu__item-image">Корзина: пока пуста</a></li>
-        </ul>
-      </div>
+      <ul class="menu-mobile">
+        <li class="menu__item"><a href="" class="menu__link menu__link--padding">Каталог товаров</a></li>
+        <li class="menu__item"><a href="" class="menu__link menu__link--padding">Вязание не заказ</a></li>
+        <li class="menu__item"><a href="" class="menu__link"><img src="img/mobile/search.svg"
+                                                                  class="menu__item-image"> Поиск по сайту</a></li>
+        <li class="menu__item"><a href="" class="menu__link"><img src="img/mobile/cart.svg" class="menu__item-image">Корзина:
+          пока пуста</a></li>
+      </ul>
     </nav>
     <section class="header-section">
       <div class="header-section__title-wrapper">
@@ -42,10 +44,15 @@
     <div class="wrapper">
     <div class="catalog__wrapper">
       <div class="product-card">
-        <a class="link" href=""><img src="/img/catalog-photo__rabbit.jpg"  class="product-card__mobile-image" width="260" height="195"
-                                     alt="rabbit"/></a>
+
         <a class="link" href="">
-        <img src="/img/catalog-photo__rabbit--tablet.jpg" class="product-card__tablet-image" height="335" alt="basket"/></a>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/desktop/triple-set-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/tablet/catalog-photo__rabbit--tablet.jpg">
+            <img src="img/mobile/catalog-photo__rabbit.jpg" alt="Вязанные корзинки" >
+          </picture>
+        </a>
+
         <div class="product-information">
           <a class="link" href="">
             <h3 class="product-information__title">Зайчик-попрыгайчик </h3>
@@ -54,42 +61,52 @@
         </div>
         <div class="product-price">
           <p class="price">1 200 руб.
-            <img class="price__add-to-cart" src="/img/icon_cart.svg"  alt="В корзину"/>
+            <img class="price__add-to-cart" src="img/mobile/cart.svg"  alt="В корзину"/>
           </p>
         </div>
       </div>
 
       <div class="product-card">
+
         <a class="link" href="">
-          <img src="/img/catalog-photo__basket.jpg" class="product-card__mobile-image" width="260" height="195" alt="basket"/></a>
-        <a class="link" href="">
-          <img src="/img/catalog-photo__basket--tablet.jpg" class="product-card__tablet-image" height="335" alt="basket"/></a>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/desktop/triple-set-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/tablet/catalog-photo__basket--tablet.jpg">
+            <img src="img/mobile/catalog-photo__basket.jpg" alt="Корзинка для белья" >
+          </picture>
+        </a>
+
         <div class="product-information">
           <a class="link" href="">
             <h3 class="product-information__title">Корзинка для белья</h3>
           </a>
-          <p class="product-information__description"> Диаметр 15 см, высота 10 см</p>
+          <p class="product-information__description">Диаметр 15 см, высота 10 см </p>
         </div>
         <div class="product-price">
-          <p class="price">690 руб.<img class="price__add-to-cart"  src="/img/icon_cart.svg" alt="В корзину"/>
+          <p class="price">690 руб.
+            <img class="price__add-to-cart" src="img/mobile/cart.svg"  alt="В корзину"/>
           </p>
         </div>
       </div>
       <div class="product-card">
+
         <a class="link" href="">
-          <img src="/img/catalog-photo__big-basket.jpg" class="product-card__mobile-image" width="260" height="195" alt="big"/></a>
-       <a class="link" href="">
-        <img src="/img/catalog-photo__big-basket--tablet.jpg" class="product-card__tablet-image" height="335" alt="basket"/></a>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/desktop/triple-set-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/tablet/catalog-photo__big-basket--tablet.jpg">
+            <img src="img/mobile/catalog-photo__big-basket.jpg" alt="Большая корзинка для игрушек" >
+          </picture>
+        </a>
+
         <div class="product-information">
           <a class="link" href="">
-            <h3 class="product-information__title product-information__title--small-width">Большая корзинка для
-              игрушек</h3>
+            <h3 class="product-information__title">Большая корзинка для игрушек</h3>
           </a>
-          <p class="product-information__description">Диаметр 30 см, высота 30 см</p>
+          <p class="product-information__description">Диаметр 30 см, высота 30 см </p>
         </div>
         <div class="product-price">
-          <p class="price">1 500 руб.
-            <img class="price__add-to-cart" src="/img/icon_cart.svg" alt="В корзину"/>
+          <p class="price">1 200 руб.
+            <img class="price__add-to-cart" src="img/mobile/cart.svg"  alt="В корзину"/>
           </p>
         </div>
       </div>
@@ -97,7 +114,7 @@
       <div class="product-video">
         <p class="product-video__title">Процесс <br>производства</p>
         <div class="video">
-          <img src="/img/icon-play.svg" width="95" height="71" alt="play"/>
+          <img src="img/mobile/play-icon.svg" width="95" height="71" alt="play"/>
         </div>
         <p class="product-video__description">По просьбам наших любимых фолловеров мы сняли для вас подробноевидео о
           том, как появляются наши товары.</p>
@@ -108,17 +125,20 @@
   </section>
 </main>
 <div class="wrapper">
-<footer class="footer">
-    <div class="social-wrapper">
-      <img src="img/mobile/social-icon__vk.svg" alt="Группа Вконтакте" class="social-wrapper__social-icon"/>
-      <img src="img/mobile/social-icon__youtube.svg" alt="Канал на Ютубе" class="social-wrapper__social-icon"/>
-      <img src="img/mobile/social-icon__tg.svg" alt="Група в Телеграмм" class="social-wrapper__social-icon"/>
+  <footer class="footer">
+    <div class="footer--wrapper">
+      <div class="footer-logo"><img src="img/tablet/logo-footer.svg"></div>
+      <div class="social-wrapper">
+        <img src="img/mobile/social-icon__vk.svg" alt="Группа Вконтакте" class="social-wrapper__social-icon"/>
+        <img src="img/mobile/social-icon__youtube.svg" alt="Канал на Ютубе" class="social-wrapper__social-icon"/>
+        <img src="img/mobile/social-icon__tg.svg" alt="Група в Телеграмм" class="social-wrapper__social-icon"/>
+      </div>
+      <div class="developer">
+        <h2 class="developer__title">Разработано</h2>
+        <img src="img/mobile/htmlacademy.svg" alt="htmlacademy"/>
+      </div>
     </div>
-    <div class="developer">
-      <h2 class="developer__title">Разработано</h2>
-      <img src="img/mobile/htmlacademy.svg" alt="htmlacademy"/>
-    </div>
-</footer>
+  </footer>
 </div>
 </body>
 

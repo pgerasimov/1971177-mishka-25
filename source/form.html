@@ -11,32 +11,39 @@
 </head>
 
 <body>
-  <header class="header">
-    <a class="link" href="/source/index.html"><img src="img/mobile/mishka-logo-mobile.svg" alt="logo" class="header__logo"></a>
+<header class="header">
+  <div class="wrapper">
+    <div class="header__logo--wrapper">
+      <a class="link" aria-label="Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/desktop/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/tablet/mishka-logo-tablet.svg">
+          <img class="header__logo" src="img/mobile/mishka-logo-mobile.svg"
+               alt="Логотип сайта Мишка">
+        </picture>
+      </a>
+    </div>
     <nav class="menu">
-      <div class="menu__hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__hamburger-btn" for="menu__toggle">
-          <span></span>
-        </label>
-        <ul class="menu__menu-box">
-          <li><a href="" class="menu__item">Каталог товаров</a></li>
-          <li><a href="" class="menu__item">Вязание не заказ</a></li>
-          <li><a href="" class="menu__item">Поиск по сайту</a></li>
-          <li><a href="" class="menu__item">Каталог товаров</a></li>
-          <li><a href="" class="menu__item">Корзина: пока пуста</a></li>
-        </ul>
-      </div>
+      <ul class="menu-mobile">
+        <li class="menu__item"><a href="" class="menu__link menu__link--padding">Каталог товаров</a></li>
+        <li class="menu__item"><a href="" class="menu__link menu__link--padding">Вязание не заказ</a></li>
+        <li class="menu__item"><a href="" class="menu__link"><img src="img/mobile/search.svg"
+                                                                  class="menu__item-image"> Поиск по сайту</a></li>
+        <li class="menu__item"><a href="" class="menu__link"><img src="img/mobile/cart.svg" class="menu__item-image">Корзина:
+          пока пуста</a></li>
+      </ul>
     </nav>
     <section class="header-section">
       <div class="header-section__title-wrapper">
         <h1 class="header-section__title form-title">Вязание на заказ</h1>
       </div>
+      <div class="zig-zag--fill"></div>
     </section>
-  </header>
+  </div>
+</header>
   <main>
     <section class="form">
-      <p class="form__titile-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+      <p class="form__title-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
         свяжемся с вами, чтобы уточнить детали.
       </p>
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -121,21 +128,21 @@
       </form>
     </section>
   </main>
+<div class="wrapper">
   <footer class="footer">
-    <div class="social-wrapper">
-      <a href=""><img src="img/mobile/social-icon__vk.svg" alt="Группа Вконтакте"
-                      class="social-wrapper__social-icon social-vk" /></a>
-      <a href="">
-        <img src="img/mobile/social-icon__youtube.svg" alt="Канал на Ютубе"
-             class="social-wrapper__social-icon social-youtube" /></a>
-      <a href="">
-        <img src="img/mobile/social-icon__tg.svg" alt="Група в Телеграмм" class="social-wrapper__social-icon" /></a>
-    </div>
-    <div class="developer">
-      <h2 class="developer__titile">Разработано</h2>
-      <img src="img/mobile/htmlacademy.svg" alt="htmlacademy" />
+    <div class="footer--wrapper">
+      <div class="footer-logo"><img src="img/tablet/logo-footer.svg"></div>
+      <div class="social-wrapper">
+        <img src="img/mobile/social-icon__vk.svg" alt="Группа Вконтакте" class="social-wrapper__social-icon"/>
+        <img src="img/mobile/social-icon__youtube.svg" alt="Канал на Ютубе" class="social-wrapper__social-icon"/>
+        <img src="img/mobile/social-icon__tg.svg" alt="Група в Телеграмм" class="social-wrapper__social-icon"/>
+      </div>
+      <div class="developer">
+        <h2 class="developer__title">Разработано</h2>
+        <img src="img/mobile/htmlacademy.svg" alt="htmlacademy"/>
+      </div>
     </div>
   </footer>
+</div>
 </body>
-
 </html>

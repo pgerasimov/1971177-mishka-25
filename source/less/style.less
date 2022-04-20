@@ -1,4 +1,3 @@
-//All General imports
 @import "blocks/variables/variables.less";
 @import "blocks/mixins/mixins.less";
 @import "blocks/general/fonts.less";
@@ -7,10 +6,7 @@
 @import "blocks/general/hidden.less";
 @import "blocks/general/mobile/footer.less";
 
-//mobile imports
 @media (min-width: 200px) and (max-width: 767px) {
-
-  // General
   @import "blocks/general/mobile/header.less";
   @import "blocks/general/mobile/menu.less";
   @import "blocks/general/mobile/modal.less";
@@ -23,8 +19,6 @@
   @import "blocks/general/mobile/wrapper-mobile.less";
   @import "blocks/general/mobile/zig-zag.less";
   @import "blocks/general/mobile/title.less";
-
-  // Index
   @import "blocks/index/mobile/about-info.less";
   @import "blocks/index/mobile/additional-menu.less";
   @import "blocks/index/mobile/contacts.less";
@@ -35,8 +29,6 @@
   @import "blocks/index/mobile/reviews-body.less";
   @import "blocks/index/mobile/reviews-contacts.less";
   @import "blocks/index/mobile/reviews-navigation.less";
-
-  // Catalog
   @import "blocks/catalog/mobile/catalog.less";
   @import "blocks/catalog/mobile/product-card.less";
   @import "blocks/catalog/mobile/product-video.less";
@@ -44,78 +36,63 @@
   @import "blocks/catalog/mobile/product-information.less";
   @import "blocks/catalog/mobile/product-price.less";
   @import "blocks/catalog/mobile/price";
-
-  // Form
   @import "blocks/form/mobile/form.less";
+}
 
-  // Tablet imports
-  @media (min-width: 768px) and (max-width: 1150px) {
+@media (min-width: 768px) and (max-width: 1150px) {
 
-    // General
-    @import "blocks/general/tablet/header.less";
-    @import "blocks/general/tablet/menu.less";
-    @import "blocks/general/tablet/button.less";
-    @import "blocks/general/tablet/wrapper-tablet.less";
-    @import "blocks/general/tablet/zig-zag.less";
-    @import "blocks/general/tablet/social-wrapper.less";
-    @import "blocks/general/tablet/footer.less";
-    @import "blocks/general/tablet/developer.less";
-    @import "blocks/general/tablet/title.less";
-    @import "blocks/general/tablet/header-section.less";
+  @import "blocks/general/tablet/header.less";
+  @import "blocks/general/tablet/menu.less";
+  @import "blocks/general/tablet/button.less";
+  @import "blocks/general/tablet/wrapper-tablet.less";
+  @import "blocks/general/tablet/zig-zag.less";
+  @import "blocks/general/tablet/social-wrapper.less";
+  @import "blocks/general/tablet/footer.less";
+  @import "blocks/general/tablet/developer.less";
+  @import "blocks/general/tablet/title.less";
+  @import "blocks/general/tablet/header-section.less";
+  @import "blocks/index/tablet/introduce.less";
+  @import "blocks/index/tablet/additional-menu.less";
+  @import "blocks/index/tablet/week-product.less";
+  @import "blocks/index/tablet/about-info.less";
+  @import "blocks/index/tablet/reviews.less";
+  @import "blocks/index/tablet/reviews-body.less";
+  @import "blocks/index/tablet/reviews-contacts.less";
+  @import "blocks/index/tablet/reviews-navigation.less";
+  @import "blocks/index/tablet/contacts.less";
+  @import "blocks/catalog/tablet/catalog.less";
+  @import "blocks/catalog/tablet/price.less";
+  @import "blocks/catalog/tablet/product-price.less";
+  @import "blocks/catalog/tablet/product-information.less";
+  @import "blocks/catalog/tablet/product-card.less";
+  @import "blocks/catalog/tablet/product-video.less";
+  @import "blocks/catalog/tablet/video.less";
+}
 
-    // Index
-    @import "blocks/index/tablet/introduce.less";
-    @import "blocks/index/tablet/additional-menu.less";
-    @import "blocks/index/tablet/week-product.less";
-    @import "blocks/index/tablet/about-info.less";
-    @import "blocks/index/tablet/reviews.less";
-    @import "blocks/index/tablet/reviews-body.less";
-    @import "blocks/index/tablet/reviews-contacts.less";
-    @import "blocks/index/tablet/reviews-navigation.less";
-    @import "blocks/index/tablet/contacts.less";
-
-    //Catalog
-    @import "blocks/catalog/tablet/catalog.less";
-    @import "blocks/catalog/tablet/price.less";
-    @import "blocks/catalog/tablet/product-price.less";
-    @import "blocks/catalog/tablet/product-information.less";
-    @import "blocks/catalog/tablet/product-card.less";
-    @import "blocks/catalog/tablet/product-video.less";
-    @import "blocks/catalog/tablet/video.less";
-  }
-
-  // Desktop imports
-  @media (min-width: 1150px) {
-
-    // General
-    @import "blocks/general/desktop/wrapper-desktop.less";
-    @import "blocks/general/desktop/button.less";
-    @import "blocks/general/desktop/zig-zag.less";
-    @import "blocks/general/desktop/title.less";
-    @import "blocks/general/desktop/footer.less";
-    @import "blocks/general/desktop/social-wrapper.less";
-    @import "blocks/general/desktop/developer.less";
-
-    //index
-    @import "blocks/index/desktop/reviews.less";
-    @import "blocks/index/desktop/reviews-body.less";
-    @import "blocks/index/desktop/reviews-contacts.less";
-    @import "blocks/index/desktop/reviews-navigation.less";
-    @import "blocks/index/desktop/contacts.less";
-    @import "blocks/index/desktop/week-product.less";
-    @import "blocks/index/desktop/about-info.less";
-    @import "blocks/index/desktop/additional-menu.less";
-    @import "blocks/index/desktop/header.less";
-    @import "blocks/index/desktop/header-section.less";
-    @import "blocks/index/desktop/introduce.less";
-
-    // Catalog
-    @import "blocks/catalog/desktop/catalog.less";
-    @import "blocks/catalog/desktop/price.less";
-    @import "blocks/catalog/desktop/product-price.less";
-    @import "blocks/catalog/desktop/product-information.less";
-    @import "blocks/catalog/desktop/product-card.less";
-    @import "blocks/catalog/desktop/product-video.less";
-    @import "blocks/catalog/desktop/video.less";
-  }
+@media (min-width: 1150px) {
+  @import "blocks/general/desktop/wrapper-desktop.less";
+  @import "blocks/general/desktop/button.less";
+  @import "blocks/general/desktop/zig-zag.less";
+  @import "blocks/general/desktop/title.less";
+  @import "blocks/general/desktop/footer.less";
+  @import "blocks/general/desktop/social-wrapper.less";
+  @import "blocks/general/desktop/developer.less";
+  @import "blocks/index/desktop/reviews.less";
+  @import "blocks/index/desktop/reviews-body.less";
+  @import "blocks/index/desktop/reviews-contacts.less";
+  @import "blocks/index/desktop/reviews-navigation.less";
+  @import "blocks/index/desktop/contacts.less";
+  @import "blocks/index/desktop/week-product.less";
+  @import "blocks/index/desktop/about-info.less";
+  @import "blocks/index/desktop/additional-menu.less";
+  @import "blocks/index/desktop/header.less";
+  @import "blocks/index/desktop/header-section.less";
+  @import "blocks/index/desktop/introduce.less";
+  @import "blocks/catalog/desktop/catalog.less";
+  @import "blocks/catalog/desktop/price.less";
+  @import "blocks/catalog/desktop/product-price.less";
+  @import "blocks/catalog/desktop/product-information.less";
+  @import "blocks/catalog/desktop/product-card.less";
+  @import "blocks/catalog/desktop/product-video.less";
+  @import "blocks/catalog/desktop/video.less";
 }

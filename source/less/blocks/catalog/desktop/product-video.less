@@ -1,10 +1,9 @@
-
 .product-video {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 80px;
-  grid-row-gap: 0px;
+  grid-row-gap: 0;
   min-width: 100%;
   padding: 30px 0 50px 50px;
 }
@@ -16,7 +15,6 @@
 
 .button {
   grid-area: 3 / 2 / 4 / 3;
-
 }
 
 .product-video__title {
@@ -29,7 +27,6 @@
 .product-video__title::before {
   content: url("../../../../img/mobile/icon-video.svg");
 }
-
 
 .product-video__description {
   grid-area: 2 / 2 / 3 / 3;
@@ -45,5 +42,4 @@
   width: 367px;
   display: flex;
   flex-direction: column;
-
 }

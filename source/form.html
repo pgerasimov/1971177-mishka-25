@@ -47,79 +47,94 @@
     <form action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="search-filter">
         <legend class="search-filter__title">Тип</legend>
-        <ul class="search-filter__options">
-          <li>
+        <div class="search-filter__divider"></div>
+        <ul class="search-filter__options-type">
+          <li class="search-filter__item">
             <input type="radio" name="product-type" id="accessory" value="accessory" checked/>
-            <label for="accessory">Аксессуар для интерьера</label>
+            <label for="accessory" class="search-filter__option">Аксессуар для интерьера</label>
           </li>
-          <li>
+          <li class="search-filter__item">
             <input type="radio" name="product-type" id="kid_toy" value="kid_toy"/>
-            <label for="kid_toy">Детская игрушка</label>
+            <label for="kid_toy" class="search-filter__option search-filter__option--padding">Детская игрушка</label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="search-filter">
         <legend class="search-filter__title">Цвет</legend>
-        <ul class="search-filter__options">
+        <div class="search-filter__divider"></div>
+        <ul class="search-filter__options-type">
           <li>
             <input type="checkbox" name="white" id="white" checked/>
-            <label for="white">Белый</label>
+            <label for="white" class="search-filter__color">Белый</label>
           </li>
           <li>
             <input type="checkbox" name="gray" id="gray" checked/>
-            <label for="gray">Серый</label>
+            <label for="gray" class="search-filter__color">Серый</label>
           </li>
           <li>
             <input type="checkbox" name="tiffany" id="tiffany"/>
-            <label for="tiffany">Тиффани</label>
+            <label for="tiffany" class="search-filter__color">Тиффани</label>
           </li>
           <li>
             <input type="checkbox" name="black" id="black"/>
-            <label for="black">Черный</label>
+            <label for="black" class="search-filter__color">Черный</label>
           </li>
           <li>
             <input type="checkbox" name="pink" id="pink"/>
-            <label for="pink">Розовый</label>
+            <label for="pink" class="search-filter__color">Розовый</label>
           </li>
           <li>
             <input type="checkbox" name="orange" id="orange"/>
-            <label for="orange">Оранжевый</label>
+            <label for="orange" class="search-filter__color">Оранжевый</label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="search-filter">
         <legend class="search-filter__title">ФИО</legend>
-        <ul class="search-filter__options">
-          <li>
-            <label for="name">Имя:</label>
-            <input type="text" name="name" id="name" placeholder="Введите ваше имя*"/>
+        <div class="search-filter__divider"></div>
+        <ul class="search-filter__personal-data">
+          <li class="search-filter__wrapper">
+            <label for="name" class="search-filter__option search-filter__option-personal">Имя:</label>
+            <input type="text" name="name" id="name" placeholder="Введите ваше имя*"
+                   class="search-filter__placeholder"/>
           </li>
-          <li>
-            <label for="surname">Фамилия:</label>
-            <input type="text" name="name" id="surname" placeholder="Укажите фамилию*"/>
+          <li class="search-filter__wrapper">
+            <label for="surname" class="search-filter__option search-filter__option-personal">Фамилия:</label>
+            <input type="text" name="name" id="surname" placeholder="Укажите фамилию*"
+                   class="search-filter__placeholder"/>
           </li>
-          <li>
-            <label for="fathername">Отчество:</label>
-            <input type="text" name="name" id="fathername" placeholder="Отчество, если желаете"/>
+          <li class="search-filter__wrapper">
+            <label for="fathername" class="search-filter__option search-filter__option-personal">Отчество:</label>
+            <input type="text" name="name" id="fathername" placeholder="Отчество, если желаете"
+                   class="search-filter__placeholder"/>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="search-filter">
+
+      <fieldset class="search-filter contact-data">
         <legend class="search-filter__title">тел</legend>
-        <input type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*"/>
-      </fieldset>
-      <fieldset class="search-filter">
-        <legend class="search-filter__title">E-mail</legend>
-        <input type="email" name="email" id="email" placeholder="Ваш Email*"/>
+        <div class="search-filter__divider search-filter__divider--padding"></div>
+        <input type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="search-filter__placeholder"/>
       </fieldset>
 
-      <fieldset class="search-filter">
-        <legend class="search-filter__title">Доп</legend>
-        <textarea rows="11" cols="25" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      <fieldset class="search-filter contact-data">
+        <legend class="search-filter__title">E-mail</legend>
+        <div class="search-filter__divider search-filter__divider--padding"></div>
+        <input type="email" name="email" id="email" placeholder="Ваш Email*" class="search-filter__placeholder"/>
       </fieldset>
-      <p class="form__additional-info">*Поля обязательны для заполнения</p>
-      <button class="button" type="submit">Сделать заказ</button>
+
+      <fieldset class="search-filter additional-data">
+        <legend class="search-filter__title">Доп</legend>
+        <div class="search-filter__divider search-filter__divider--padding"></div>
+        <textarea rows="11" cols="25" placeholder="Опишите все ваши пожелания к заказу"
+                  class="additional-data__text"></textarea>
+      </fieldset>
+      <div class="wrapper">
+        <p class="form__additional-info">*Поля обязательны для заполнения</p>
+        <button class="button button__contact" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+      </div>
     </form>
+
   </section>
 </main>
 <footer class="footer">
@@ -134,7 +149,7 @@
       <h2 class="developer__title">Разработано</h2>
       <img src="img/mobile/htmlacademy.svg" alt="htmlacademy"/>
     </div>
-  </div>
+
 </footer>
 </body>
 </html>

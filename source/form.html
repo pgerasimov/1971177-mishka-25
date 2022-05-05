@@ -45,13 +45,11 @@
       свяжемся с вами, чтобы уточнить детали.
     </p>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="search-filter ">
-        <div>
-        <legend class="search-filter__title search-filter__title-type">Тип</legend>
-        <div class="search-filter__divider"></div>
+      <fieldset class="search-filter search-filter--padding">
+        <div class="search-filter_title--wrapper">
+          <legend class="search-filter__title search-filter__title-type">Тип</legend>
+          <div class="search-filter__divider"></div>
         </div>
-
-
         <ul class="search-filter__options-type">
           <li class="search-filter__item ">
             <input type="radio" name="product-type" id="accessory" value="accessory" checked/>
@@ -62,12 +60,11 @@
             <label for="kid_toy" class="search-filter__option search-filter__option--padding">Детская игрушка</label>
           </li>
         </ul>
-
       </fieldset>
-      <fieldset class="search-filter search-filter--background">
+      <fieldset class="search-filter search-filter--background search-filter--padding">
         <div class="search-filter_title--wrapper">
-        <legend class="search-filter__title search-filter__title-color">Цвет</legend>
-        <div class="search-filter__divider"></div>
+          <legend class="search-filter__title search-filter__title-color">Цвет</legend>
+          <div class="search-filter__divider"></div>
         </div>
         <ul class="search-filter__options-type search-filter__options-type--row">
           <li>
@@ -96,69 +93,80 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="search-filter">
-        <div>
-        <legend class="search-filter__title">ФИО</legend>
+      <fieldset class="search-filter search-filter--padding">
+        <div class="search-filter_title--wrapper">
+          <legend class="search-filter__title">ФИО</legend>
         </div>
         <div class="search-filter__divider"></div>
         <ul class="search-filter__personal-data">
-          <li class="search-filter__wrapper">
+          <li class="search-filter__wrapper search-filter__wrapper--padding">
             <div class="search-filter__label-wrapper">
-            <label for="name" class="search-filter__option search-filter__option-personal">Имя:</label>
+              <label for="name" class="search-filter__option search-filter__option-personal">Имя:</label>
             </div>
             <div class="search-filter__input-wrapper">
-            <input type="text" name="name" id="name" placeholder="Введите ваше имя*" class="search-filter__placeholder"/>
+              <input type="text" name="name" id="name" placeholder="Введите ваше имя*"
+                     class="search-filter__placeholder"/>
             </div>
           </li>
           <li class="search-filter__wrapper">
             <div class="search-filter__label-wrapper">
-            <label for="surname" class="search-filter__option search-filter__option-personal">Фамилия:</label>
+              <label for="surname" class="search-filter__option search-filter__option-personal">Фамилия:</label>
             </div>
-            <div class="search-filter__input-wrapper">
-            <input type="text" name="name" id="surname" placeholder="Укажите фамилию*" class="search-filter__placeholder"/>
+            <div class="search-filter__input-wrapper search-filter__input-padding">
+              <input type="text" name="name" id="surname" placeholder="Укажите фамилию*"
+                     class="search-filter__placeholder"/>
             </div>
           </li>
           <li class="search-filter__wrapper">
             <div class="search-filter__label-wrapper">
-            <label for="fathername" class="search-filter__option search-filter__option-personal">Отчество:</label>
+              <label for="fathername" class="search-filter__option search-filter__option-personal">Отчество:</label>
             </div>
-            <div class="search-filter__input-wrapper">
-            <input type="text" name="name" id="fathername" placeholder="Отчество, если желаете" class="search-filter__placeholder"/>
+            <div class="search-filter__input-wrapper search-filter__input-padding">
+              <input type="text" name="name" id="fathername" placeholder="Отчество, если желаете"
+                     class="search-filter__placeholder"/>
             </div>
           </li>
         </ul>
       </fieldset>
       <div class="search-filter_contact-wrapper">
-      <fieldset class="search-filter">
-        <div>
-          <legend class="search-filter__title">ТЕЛ</legend>
-        </div>
-        <div class="search-filter__divider"></div>
-        <ul class="search-filter__personal-data">
-          <li class="search-filter__wrapper">
-            <input type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="search-filter__placeholder"/>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="search-filter">
-        <div>
-          <legend class="search-filter__title">E-MAIL</legend>
-        </div>
-        <div class="search-filter__divider"></div>
-        <ul class="search-filter__personal-data">
-          <li class="search-filter__wrapper">
-            <input type="email" name="email" placeholder="Ваш Email*" class="search-filter__placeholder"/>
-          </li>
-        </ul>
-      </fieldset>
+        <fieldset class="search-filter search-filter__contacts--padding">
+          <div class="search-filter_title--wrapper">
+            <legend class="search-filter__title search-filter__title-width">ТЕЛ</legend>
+          </div>
+          <div class="search-filter__divider"></div>
+          <ul class="search-filter__personal-data">
+            <li class="search-filter__wrapper search-filter__wrapper--padding">
+              <div class="search-filter__input-wrapper search-filter__input-padding search-filter__contacts--width">
+                <input type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="search-filter__placeholder"/>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="search-filter search-filter__contacts--padding">
+          <div class="search-filter_title--wrapper">
+            <legend class="search-filter__title search-filter__title-width">E-MAIL</legend>
+          </div>
+          <div class="search-filter__divider"></div>
+          <ul class="search-filter__personal-data">
+            <li class="search-filter__wrapper search-filter__wrapper--padding">
+              <div class="search-filter__input-wrapper search-filter__input-padding search-filter__contacts--width">
+                <input type="email" name="email" placeholder="Ваш Email*" class="search-filter__placeholder"/>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
       </div>
-      <fieldset class="search-filter additional-data">
-        <legend class="search-filter__title">Доп</legend>
+      <fieldset class="search-filter additional-data search-filter--padding">
+        <div class="search-filter_title--wrapper">
+          <legend class="search-filter__title">Доп</legend>
+        </div>
         <div class="search-filter__divider search-filter__divider--padding"></div>
-        <textarea rows="11" cols="25" placeholder="Опишите все ваши пожелания к заказу"
-                  class="additional-data__text"></textarea>
+        <div class="search-filer__additional-data--padding">
+          <textarea placeholder="Опишите все ваши пожелания к заказу"
+                    class="search-filter__additional-data"></textarea>
+        </div>
       </fieldset>
-      <div class="wrapper">
+      <div class="search-filter__order-wrapper">
         <p class="form__additional-info">*Поля обязательны для заполнения</p>
         <button class="button button__contact" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
       </div>

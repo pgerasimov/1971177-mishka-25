@@ -17,7 +17,7 @@
   .search-filter__divider {
     height: 1px;
     border-top: 1px solid #62d1ba;
-    width: 170px;
+    min-width: 100px;
     align-self: center;
     margin-top: -10px;
     margin-left: 80px;
@@ -98,6 +98,7 @@
     padding-top: 22px;
     border: 0;
     border-bottom: 2px solid #000000;
+    min-width: 100%;
   }
 
   .search-filter__placeholder {
@@ -118,3 +119,137 @@
     flex-wrap: wrap;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1150px) {
+
+  .search-filter {
+    border: 0;
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .search-filter__option {
+    .font;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+  }
+
+  .search-filter__color {
+    padding-bottom: 40px;
+    .font;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  .search-filter__options-type {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .search-filter__title {
+    .font;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #63D1BB;
+    padding-left: 50px;
+    padding-top: 60px;
+    padding-right: 93px;
+  }
+
+  .search-filter__personal-data {
+    padding-left: 50px;
+    max-width: 430px;
+    width: 100%;
+  }
+
+  .search-filter__item {
+    padding-bottom: 40px;
+  }
+
+  .search-filter__options-type--row {
+    flex-direction: row;
+    padding-top: 50px;
+  }
+
+  .search-filter_contact-wrapper {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+
+  .additional-data__text {
+    border: 2px solid #444444;
+    box-sizing: border-box;
+    width: 260px;
+    height: 142px;
+    .font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    padding: 17px;
+  }
+
+
+  .search-filter__option-personal {
+    padding-bottom: 10px;
+  }
+
+
+  .search-filter__wrapper {
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 22px;
+    border: 0;
+    min-width: 100%;
+  }
+
+  .search-filter__input-wrapper {
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 22px;
+    border: 0;
+    min-width: 100%;
+    border-bottom: 2px solid #000000;
+  }
+
+  .search-filter__label-wrapper {
+    align-self: center;
+    padding-right: 24px;
+    padding-top: 20px;
+    min-width: 100px;
+  }
+
+
+  .additional-data__text::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+
+  .search-filter__placeholder {
+    .font;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+    opacity: 0.3;
+    border: 0;
+  }
+
+  .search-filter__title--align {
+    align-self: center;
+  }
+}
+

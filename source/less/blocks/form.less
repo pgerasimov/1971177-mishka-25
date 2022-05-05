@@ -10,11 +10,62 @@
     line-height: 16px;
     color: #444444;
   }
+
+  .form__title-text {
+    .font;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+  }
 }
 
-.form__title-text {
-  .font;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
+@media (min-width: 768px) and (max-width: 1150px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .form__additional-info {
+    .font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #444444;
+  }
+
+  .form__title-text {
+    .font;
+    margin: 0;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    width: 668px;
+    padding-top: 54px;
+    padding-bottom: 65px;
+  }
+}
+
+
+@media (min-width: 1150px) {
+  .form {
+    padding: 98px 0px 60px 0px;
+  }
+
+  .form__additional-info {
+    .font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #444444;
+  }
+
+  .form__title-text {
+    .font;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    padding-left: 225px;
+    width: 700px;
+  }
 }

@@ -11,7 +11,7 @@
 </head>
 <body>
 <header class="header">
-  <div class="wrapper">
+  <div class="header__wrapper">
     <div class="header__logo--wrapper">
       <a class="link" href="index.html" aria-label="Мишка">
         <picture>
@@ -35,7 +35,7 @@
       <div class="header-section__title-wrapper">
         <h1 class="header-section__title form-title">Вязание на заказ</h1>
       </div>
-      <div class="zig-zag--fill"></div>
+      <div class="zig-zag--catalog"></div>
     </section>
   </div>
 </header>
@@ -45,11 +45,15 @@
       свяжемся с вами, чтобы уточнить детали.
     </p>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="search-filter">
-        <legend class="search-filter__title">Тип</legend>
+      <fieldset class="search-filter ">
+        <div>
+        <legend class="search-filter__title search-filter__title-type">Тип</legend>
         <div class="search-filter__divider"></div>
+        </div>
+
+
         <ul class="search-filter__options-type">
-          <li class="search-filter__item">
+          <li class="search-filter__item ">
             <input type="radio" name="product-type" id="accessory" value="accessory" checked/>
             <label for="accessory" class="search-filter__option">Аксессуар для интерьера</label>
           </li>
@@ -58,11 +62,14 @@
             <label for="kid_toy" class="search-filter__option search-filter__option--padding">Детская игрушка</label>
           </li>
         </ul>
+
       </fieldset>
-      <fieldset class="search-filter">
-        <legend class="search-filter__title">Цвет</legend>
+      <fieldset class="search-filter search-filter--background">
+        <div class="search-filter_title--wrapper">
+        <legend class="search-filter__title search-filter__title-color">Цвет</legend>
         <div class="search-filter__divider"></div>
-        <ul class="search-filter__options-type">
+        </div>
+        <ul class="search-filter__options-type search-filter__options-type--row">
           <li>
             <input type="checkbox" name="white" id="white" checked/>
             <label for="white" class="search-filter__color">Белый</label>
@@ -90,34 +97,63 @@
         </ul>
       </fieldset>
       <fieldset class="search-filter">
+        <div>
         <legend class="search-filter__title">ФИО</legend>
+        </div>
         <div class="search-filter__divider"></div>
         <ul class="search-filter__personal-data">
           <li class="search-filter__wrapper">
+            <div class="search-filter__label-wrapper">
             <label for="name" class="search-filter__option search-filter__option-personal">Имя:</label>
+            </div>
+            <div class="search-filter__input-wrapper">
             <input type="text" name="name" id="name" placeholder="Введите ваше имя*" class="search-filter__placeholder"/>
+            </div>
           </li>
           <li class="search-filter__wrapper">
+            <div class="search-filter__label-wrapper">
             <label for="surname" class="search-filter__option search-filter__option-personal">Фамилия:</label>
+            </div>
+            <div class="search-filter__input-wrapper">
             <input type="text" name="name" id="surname" placeholder="Укажите фамилию*" class="search-filter__placeholder"/>
+            </div>
           </li>
           <li class="search-filter__wrapper">
+            <div class="search-filter__label-wrapper">
             <label for="fathername" class="search-filter__option search-filter__option-personal">Отчество:</label>
+            </div>
+            <div class="search-filter__input-wrapper">
             <input type="text" name="name" id="fathername" placeholder="Отчество, если желаете" class="search-filter__placeholder"/>
+            </div>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="search-filter contact-data">
-        <legend class="search-filter__title">тел</legend>
-        <div class="search-filter__divider search-filter__divider--padding"></div>
-        <input type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="search-filter__placeholder"/>
-      </fieldset>
 
-      <fieldset class="search-filter contact-data">
-        <legend class="search-filter__title">E-mail</legend>
-        <div class="search-filter__divider search-filter__divider--padding"></div>
-        <input type="email" name="email" id="email" placeholder="Ваш Email*" class="search-filter__placeholder"/>
+      <div class="search-filter_contact-wrapper">
+      <fieldset class="search-filter">
+        <div>
+          <legend class="search-filter__title">ТЕЛ</legend>
+        </div>
+        <div class="search-filter__divider"></div>
+        <ul class="search-filter__personal-data">
+          <li class="search-filter__wrapper">
+            <input type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="search-filter__placeholder"/>
+          </li>
+        </ul>
       </fieldset>
+      <fieldset class="search-filter">
+        <div>
+          <legend class="search-filter__title">E-MAIL</legend>
+        </div>
+        <div class="search-filter__divider"></div>
+        <ul class="search-filter__personal-data">
+          <li class="search-filter__wrapper">
+            <input type="email" name="email" placeholder="Ваш Email*" class="search-filter__placeholder"/>
+          </li>
+        </ul>
+      </fieldset>
+      </div>
+
 
       <fieldset class="search-filter additional-data">
         <legend class="search-filter__title">Доп</legend>

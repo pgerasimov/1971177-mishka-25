@@ -1,0 +1,56 @@
+@media (max-width: 767px) {
+  .zig-zag {
+    background: url("../../img/tablet/zigzag-line-tablet.svg") no-repeat;
+    height: 30px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1150px) {
+  .zig-zag {
+    background: url("../../img/tablet/zigzag-line-tablet.svg") no-repeat;
+    height: 17px;
+    padding-bottom: 55px;
+  }
+
+  .zig-zag--index::after {
+    content: "";
+    position: absolute;
+    top: 1020px;
+    width: 100%;
+    height: 24px;
+    background-image: url("../../img/desktop/zigzag-fill-desktop.svg");
+    background-position: center top;
+    background-repeat: repeat-x;
+    background-size: auto 134%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .zig-zag {
+    background: url("../../img/desktop/zigzag-line-desktop.svg") no-repeat;
+    height: 23px;
+    width: 96%;
+  }
+
+  .zig-zag--index::after {
+    content: "";
+    position: absolute;
+    top: 1040px;
+    width: 100%;
+    height: 24px;
+    background-image: url("../../img/desktop/zigzag-fill-desktop.svg");
+    background-position: center top;
+    background-repeat: repeat-x;
+    background-size: auto 134%;
+  }
+
+
+  .zig-zag--catalog {
+    background: url("../../img/desktop/zigzag-fill-desktop.svg") no-repeat;
+    margin-top: -15px;
+    height: 34px;
+    z-index: 999;
+    position: relative;
+  }
+}

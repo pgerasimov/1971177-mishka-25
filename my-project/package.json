@@ -1,0 +1,22 @@
+{
+  "name": "mishka",
+  "version": "1.0.0",
+  "description": "html-academy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgerasimov/1971177-mishka-25.git"
+  },
+  "author": "Pavel Gerasimov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgerasimov/1971177-mishka-25/issues"
+  },
+  "homepage": "https://github.com/pgerasimov/1971177-mishka-25#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

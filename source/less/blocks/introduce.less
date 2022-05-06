@@ -1,0 +1,89 @@
+@media (max-width: 767px) {
+  .introduce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    min-width: 320px;
+  }
+
+  .introduce__picture {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../img/mobile/hero-mobile@2x.jpg") no-repeat center;
+    min-height: 283px;
+    min-width: 320px;
+  }
+
+  .introduce__slogan {
+    font-family: @font;
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 52px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1150px) {
+  .introduce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+
+  .introduce__picture {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: url("../../img/desktop/hero-desktop.png") no-repeat center;
+    width: 100%;
+    height: 745px;
+  }
+
+  .introduce__slogan {
+    .font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+    text-align: center;
+    max-width: 668px;
+    padding-top: 160px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .introduce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+
+  .introduce__picture {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 745px;
+    background: url("../../img/desktop/hero-desktop.png") no-repeat center;
+  }
+
+  .introduce__slogan {
+    .font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
+    margin: 0;
+    text-align: center;
+    max-width: 668px;
+    padding-top: 160px;
+  }
+}

@@ -15,13 +15,20 @@
 <body>
 <header class="header">
   <div class="header__wrapper">
-    <div class="header__logo--wrapper">
+    <div class="header__logo-wrapper">
       <a class="link" href="#" aria-label="Мишка">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/desktop/mishka-logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/tablet/mishka-logo-tablet.svg">
-          <img class="header__logo" src="img/mobile/mishka-logo-mobile.svg" alt="Логотип сайта Мишка">
-        </picture>
+
+        <svg class="header__logo-mobile" width="86" height="35">
+          <use xlink:href="img/sprite.svg#mobile-logo"></use>
+        </svg>
+
+        <svg class="header__logo-tablet" width="114" height="46">
+          <use xlink:href="img/sprite.svg#tablet-logo"></use>
+        </svg>
+
+          <svg class="header__logo-desktop" width="149" height="72">
+            <use xlink:href="img/sprite.svg#desktop-logo"></use>
+          </svg>
       </a>
     </div>
     <nav class="menu">

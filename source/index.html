@@ -95,12 +95,14 @@
         </div>
         <div class="week-product__photo">
           <picture>
-            <source media="(min-width: 1150px)"
-                    srcset="img/desktop/triple-set-desktop.jpg 1x, img/desktop/triple-set-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-                    srcset="img/tablet/triple-set-tablet.jpg 1x, img/tablet/triple-set-tablet@2x.jpg 2x">
-            <img src="img/mobile/triple-set-mobile.jpg" srcset="img/mobile/triple-set-mobile@2x.jpg 2x"
-                 alt="Вязанные корзинки">
+            <source media="(min-width: 1150px)" type="image/webp" srcset="img/desktop/triple-set-desktop.webp 1x, img/desktop/triple-set-desktop@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/desktop/triple-set-desktop.jpg 1x, img/desktop/triple-set-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/tablet/triple-set-tablet.webp, img/tablet/triple-set-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet.jpg 1x, img/tablet/triple-set-tablet@2x.jpg 2x">
+
+            <source srcset="img/mobile/triple-set-mobile.webp 1x, img/mobile/triple-set-mobile@2x.webp 2x" type="image/webp">
+            <img src="img/mobile/triple-set-mobile.jpg" srcset="img/mobile/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
           </picture>
         </div>
       </div>
@@ -178,10 +180,6 @@
       <div class="contacts__wrapper">
         <h2 class="title contacts--title">Контакты</h2>
         <div class="contacts__icon">
-<!--          <svg width="47" height="81" viewBox="0 0 47 81" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--            <path d="M7.76611 3.86183V42.3812L47 23.072L7.76611 3.86183ZM0 80.9005V0H3.83261V80.9005H0Z"-->
-<!--                  fill="#63D1BB"/>-->
-<!--          </svg>-->
           <svg width="47" height="81">
           <use xlink:href="img/sprite.svg#flag-icon"></use>
           </svg>

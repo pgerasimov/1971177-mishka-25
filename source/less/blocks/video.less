@@ -1,9 +1,13 @@
 @media (max-width: 767px) {
   .video {
-    background-image: url("../../img/mobile/video-mobile__backgorund.jpg");
+    background-image: url("../../img/mobile/video-mobile.jpg");
     background-repeat: no-repeat;
     background-color: #f1f1f1;
     min-height: 150px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/mobile/video-mobile@2x.jpg") no-repeat;
+    }
   }
 
   .video > img {
@@ -23,10 +27,14 @@
 
 @media (min-width: 768px) and (max-width: 1150px) {
   .video {
-    background-image: url("../../img/tablet/video-tablet__backgorund.jpg");
+    background-image: url("../../img/tablet/video-tablet.jpg");
     background-repeat: no-repeat;
     background-color: #f1f1f1;
     min-height: 455px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/tablet/video-tablet@2x.jpg") no-repeat;
+    }
   }
 
   .video > img {
@@ -46,10 +54,15 @@
 
 @media (min-width: 1150px) {
   .video {
-    background-image: url("../../img/desktop/video-desktop__backgorund.jpg");
+    background-image: url("../../img/desktop/video-desktop.jpg");
     background-repeat: no-repeat;
     background-color: #f1f1f1;
     min-height: 455px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/desktop/video-desktop@x2.jpg") no-repeat;
+    }
+
   }
 
   .video > img {

@@ -7,6 +7,14 @@ import browser from 'browser-sync';
 
 // Styles
 
+export const css = () => {
+  return gulp.src('./source/css/*.css')
+    .pipe(postcss([
+      autoprefixer(),
+    ]))
+    .pipe(gulp.dest('./dest'))
+};
+
 export const styles = () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
     .pipe(plumber())

@@ -5,29 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="js/less.js" type="text/javascript"></script>
   <title>Mishka - Милые штуки ручнойработы для дома</title>
 </head>
 <body>
 <header class="header">
   <div class="header__wrapper">
-    <div class="header__logo--wrapper">
+    <div class="header__logo-wrapper">
       <a class="link" href="#" aria-label="Мишка">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/desktop/mishka-logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/tablet/mishka-logo-tablet.svg">
-          <img class="header__logo" src="img/mobile/mishka-logo-mobile.svg" alt="Логотип сайта Мишка">
-        </picture>
+        <svg class="header__logo-mobile" width="86" height="35">
+          <use xlink:href="img/sprite.svg#mobile-logo"></use>
+        </svg>
+
+        <svg class="header__logo-tablet" width="114" height="46">
+          <use xlink:href="img/sprite.svg#tablet-logo"></use>
+        </svg>
+
+          <svg class="header__logo-desktop" width="149" height="72">
+            <use xlink:href="img/sprite.svg#desktop-logo"></use>
+          </svg>
       </a>
     </div>
     <nav class="menu">
       <ul class="menu-mobile">
         <li class="menu__item"><a href="catalog.html" class="menu__link menu__link--padding">Каталог товаров</a></li>
         <li class="menu__item"><a href="form.html" class="menu__link menu__link--padding">Вязание не заказ</a></li>
-        <li class="menu__item"><a href="" class="menu__link"><img src="img/mobile/search.svg"
-                                                                  class="menu__item-image"> Поиск по сайту</a></li>
-        <li class="menu__item"><a href="" class="menu__link"><img src="img/mobile/cart.svg"
-                                                                  class="menu__item-image">Корзина:
+        <li class="menu__item"><a href="" class="menu__link">
+          <img src="img/mobile/search.svg" class="menu__item-image"> Поиск по сайту</a></li>
+        <li class="menu__item"><a href="" class="menu__link">
+          <img src="img/mobile/cart.svg" class="menu__item-image">Корзина:
           пока пуста</a></li>
       </ul>
     </nav>
@@ -41,13 +51,17 @@
         <a class="link" href="catalog.html">
           <div class="additional-menu__interior">
             <span class="additional-menu__interior-text">Предметы интерьера</span>
-            <img src="img/mobile/interior.svg" alt="Предметы интерьера"/>
+            <svg width="40" height="62">
+              <use xlink:href="img/sprite.svg#interior"></use>
+            </svg>
           </div>
         </a>
         <a class="link" href="catalog.html">
           <div class="additional-menu__toys">
             <span class="additional-menu__toy-text additional-menu__toy-text--padding">Детские игрушки</span>
-            <img src="img/mobile/toy.svg" alt="Детские игрушки"/>
+            <svg width="60" height="60">
+              <use xlink:href="img/sprite.svg#toy-icon"></use>
+            </svg>
           </div>
         </a>
       </div>
@@ -59,9 +73,11 @@
   <section class="week-product">
     <div class="wrapper">
       <div class="week-product--wrapper">
-        <div class="week-product__header">
+        <div class="week-product__title">
           <h2 class="week-product__title week-product__title--padding">Вязаные корзинки</h2>
-          <span class="week-product__subtitle">товар недели</span>
+        </div>
+        <div class="week-product__subtitle">
+          <span class="week-product__subtitle-text">товар недели</span>
         </div>
         <div class="week-product__description">
           <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
@@ -82,9 +98,14 @@
         </div>
         <div class="week-product__photo">
           <picture>
-            <source media="(min-width: 1150px)" srcset="img/desktop/triple-set-desktop.jpg">
-            <source media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet.jpg">
-            <img src="img/mobile/triple-set-mobile.jpg" alt="Вязанные корзинки">
+            <source media="(min-width: 1150px)" type="image/webp" srcset="img/desktop/triple-set-desktop.webp 1x, img/desktop/triple-set-desktop@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/desktop/triple-set-desktop.jpg 1x, img/desktop/triple-set-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/tablet/triple-set-tablet.webp, img/tablet/triple-set-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet.jpg 1x, img/tablet/triple-set-tablet@2x.jpg 2x">
+
+            <source srcset="img/mobile/triple-set-mobile.webp 1x, img/mobile/triple-set-mobile@2x.webp 2x" type="image/webp">
+            <img src="img/mobile/triple-set-mobile.jpg" srcset="img/mobile/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
           </picture>
         </div>
         <div class="week-product__order">
@@ -94,33 +115,48 @@
       </div>
     </div>
   </section>
+  <div class="zig-zag"></div>
   <section class="about-info">
+
     <div class="wrapper">
-      <div class="zig-zag"></div>
-      <h2 class="title title-tablet">Коротко о нас:</h2>
+      <div class="about-info__title">
+        <h2 class="title title-tablet">Коротко о нас:</h2>
+      </div>
       <div class="about-info__wrapper">
         <div class="about-info__flower-wrapper">
-          <img src="img/mobile/flower.svg" alt="Экологически чистые материалы"/>
+          <svg width="33" height="38">
+            <use xlink:href="img/sprite.svg#flower-icon"></use>
+          </svg>
           <p class="about-info__text">Экологически <br> чистые материалы</p>
         </div>
         <div class="about-info__wtf-wrapper">
-          <img src="img/mobile/wtf.svg" alt="Скандинавский стиль по российской цене"/>
+          <svg width="47" height="27">
+            <use xlink:href="img/sprite.svg#wtf-icon"></use>
+          </svg>
           <p class="about-info__text"> Скандинавский стиль <br> по российской цене</p>
         </div>
         <div class="about-info__heart-wrapper">
-          <img src="img/mobile/hearrr.svg" alt="Увеличивает лайкина фотографиях"/>
+          <svg width="34" height="27">
+            <use xlink:href="img/sprite.svg#heart-icon"></use>
+          </svg>
           <p class="about-info__text">Увеличивает лайкина <br>на фотографиях</p>
         </div>
         <div class="about-info__clew-wrapper">
-          <img src="img/mobile/clew.svg" alt="Связано вручную с любовью и умилением"/>
+          <svg width="35" height="34">
+            <use xlink:href="img/sprite.svg#clew-icon"></use>
+          </svg>
           <p class="about-info__text"> Связано вручную <br>с любовью и умилением </p>
         </div>
         <div class="about-info__rocket-wrapper">
-          <img src="img/mobile/rocet.svg" alt="Поддержка отечественного производителя"/>
+          <svg width="55" height="23">
+            <use xlink:href="img/sprite.svg#rocket-icon"></use>
+          </svg>
           <p class="about-info__text">Поддержка отечественного<br> производителя</p>
         </div>
         <div class="about-info__gift-wrapper">
-          <img src="img/mobile/gift.svg" alt="Поставляется в подарочной упаковке"/>
+          <svg width="33" height="32">
+            <use xlink:href="img/sprite.svg#gift-icon"></use>
+          </svg>
           <p class="about-info__text">Поставляется<br> в подарочной упаковке</p>
         </div>
       </div>
@@ -129,7 +165,6 @@
   <section class="reviews">
     <div class="wrapper">
       <div class="reviews--wrapper">
-        <div class="reviews--background"><img src="img/tablet/review-background.jpg" width="350" height="457"></div>
         <div class="reviews__header">
           <h2 class="title">Отзывы</h2>
         </div>
@@ -147,10 +182,14 @@
         </div>
         <div class="reviews-navigation">
           <button class="reviews-navigation__left-arrow" type="button">
-            <img src="img/mobile/huge-arrow-left.svg" alt="Назад"/>
+            <svg width="50" height="26">
+              <use xlink:href="img/sprite.svg#left-arrow-icon"></use>
+            </svg>
           </button>
           <button class="reviews-navigation__right-arrow" type="button">
-            <img src="img/mobile/huge-arrow-right.svg" alt="Вперед"/>
+            <svg width="50" height="26">
+              <use xlink:href="img/sprite.svg#right-arrow-icon"></use>
+            </svg>
           </button>
         </div>
         <div class="reviews__button">
@@ -165,9 +204,8 @@
       <div class="contacts__wrapper">
         <h2 class="title contacts--title">Контакты</h2>
         <div class="contacts__icon">
-          <svg width="47" height="81" viewBox="0 0 47 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.76611 3.86183V42.3812L47 23.072L7.76611 3.86183ZM0 80.9005V0H3.83261V80.9005H0Z"
-                  fill="#63D1BB"/>
+          <svg width="47" height="81">
+          <use xlink:href="img/sprite.svg#flag-icon"></use>
           </svg>
         </div>
         <div class="contacts___email">
@@ -180,11 +218,6 @@
         </div>
         <div class="contacts_map">
           <h2 class="hidden">Наш магазин на карте</h2>
-          <!--                      <picture>-->
-          <!--                        <source media="(min-width: 1150px)" srcset="img/desktop/map-desktop.jpg">-->
-          <!--                        <source media="(min-width: 768px)" srcset="img/tablet/map-tablet.jpg">-->
-          <!--                        <img src="img/mobile/map-mobile@1x.jpg" class="contacts_map&#45;&#45;img" alt="Карта">-->
-          <!--                      </picture>-->
           <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A76c38d182d3898c1e7b16640c349473d020b4517f9b307c7f0321a27b4e2e3f4&amp;source=constructor"
             width="100%" height="457" class="contacts_map--img" alt="Карта"></iframe>
@@ -194,22 +227,34 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
 </main>
 <footer class="footer">
   <div class="footer__wrapper">
-    <div class="footer-logo"><img src="img/tablet/logo-footer.svg"></div>
+    <div class="footer-logo">
+      <svg width="102" height="34">
+        <use xlink:href="img/sprite.svg#footer-logo"></use>
+      </svg>
+    </div>
     <div class="social-wrapper">
-      <img src="img/mobile/social-icon__vk.svg" alt="Группа Вконтакте" class="social-wrapper__social-icon"/>
-      <img src="img/mobile/social-icon__youtube.svg" alt="Канал на Ютубе" class="social-wrapper__social-icon"/>
-      <img src="img/mobile/social-icon__tg.svg" alt="Група в Телеграмм" class="social-wrapper__social-icon"/>
+      <svg width="27" height="18" class="social-wrapper__social-icon">
+        <use xlink:href="img/sprite.svg#vk-icon"></use>
+      </svg>
+      <svg width="27" height="18" class="social-wrapper__social-icon">
+        <use xlink:href="img/sprite.svg#youtube-icon"></use>
+      </svg>
+      <svg width="27" height="18" class="social-wrapper__social-icon">
+        <use xlink:href="img/sprite.svg#telegram-icon"></use>
+      </svg>
     </div>
     <div class="developer">
       <h2 class="developer__title">Разработано</h2>
-      <img src="img/mobile/htmlacademy.svg" alt="htmlacademy"/>
+      <svg width="27" height="18" class="social-wrapper__social-icon">
+        <use xlink:href="img/sprite.svg#academy-logo"></use>
+      </svg>
     </div>
   </div>
+
 </footer>
 </body>
 

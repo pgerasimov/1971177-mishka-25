@@ -30,6 +30,12 @@
     grid-row-gap: 0;
     min-height: 457px;
     padding-bottom: 68px;
+    background: url("../../img/tablet/review-background.jpg") no-repeat;
+    padding-left: 174px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/tablet/review-background@x2.jpg") no-repeat;
+    }
   }
 
   .reviews__header {
@@ -52,15 +58,26 @@
 }
 
 @media (min-width: 1150px) {
+  .reviews {
+    padding: 90px 0 50px;
+  }
+
   .reviews--wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0;
     grid-row-gap: 0;
+    padding-top: 78px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: url("../../img/tablet/review-background.jpg") no-repeat;
     min-height: 457px;
-    padding-bottom: 68px;
-    padding-top: 90px;
+    padding-left: 174px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/tablet/review-background@x2.jpg") no-repeat;
+    }
   }
 
   .reviews__header {
@@ -73,10 +90,5 @@
     justify-content: flex-end;
     align-items: center;
     padding-right: 50px;
-  }
-
-  .reviews--background {
-    position: absolute;
-    z-index: -1;
   }
 }

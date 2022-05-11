@@ -85,9 +85,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 1150px) {
-  .week-product {
-    padding-bottom: 100px;
-  }
   .week-product--wrapper {
     display: grid;
     grid-template-columns: 390px 220px 1fr;
@@ -174,19 +171,17 @@
   .week-product__photo {
     grid-area: 2 / 2 / 5 / 3;
   }
+
   .week-product {
     background-image: url("../../img/desktop/zigzag-line-desktop.svg");
     background-position: bottom center;
     background-size: auto;
     background-repeat: repeat-x;
+    padding-bottom: 100px;
   }
 }
 
 @media (min-width: 1150px) {
-
-  .week-product {
-    padding-bottom: 10px;
-  }
   .week-product--wrapper {
     display: grid;
     grid-template-columns: 175px 350px 1fr;
@@ -278,5 +273,6 @@
     background-image: url("../../img/desktop/zigzag-line-desktop.svg");
     background-repeat: no-repeat;
     background-position: bottom center;
+    padding-bottom: 10px;
   }
 }

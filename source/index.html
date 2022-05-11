@@ -5,19 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="js/less.js" type="text/javascript"></script>
   <title>Mishka - Милые штуки ручнойработы для дома</title>
 </head>
 <body>
 <header class="header">
   <div class="header__wrapper">
-    <div class="header__logo--wrapper">
+    <div class="header__logo-wrapper">
       <a class="link" href="#" aria-label="Мишка">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/desktop/mishka-logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/tablet/mishka-logo-tablet.svg">
-          <img class="header__logo" src="img/mobile/mishka-logo-mobile.svg" alt="Логотип сайта Мишка">
-        </picture>
+
+        <svg class="header__logo-mobile" width="86" height="35">
+          <use xlink:href="img/sprite.svg#mobile-logo"></use>
+        </svg>
+
+        <svg class="header__logo-tablet" width="114" height="46">
+          <use xlink:href="img/sprite.svg#tablet-logo"></use>
+        </svg>
+
+          <svg class="header__logo-desktop" width="149" height="72">
+            <use xlink:href="img/sprite.svg#desktop-logo"></use>
+          </svg>
       </a>
     </div>
     <nav class="menu">
@@ -59,11 +70,13 @@
   <section class="week-product">
     <div class="wrapper">
       <div class="week-product--wrapper">
+        <div class="week-product__title">
+          <h2 class="week-product__title week-product__title--padding">Вязаные корзинки</h2>
+        </div>
         <div class="week-product__subtitle">
           <span class="week-product__subtitle-text">товар недели</span>
         </div>
         <div class="week-product__description">
-          <h2 class="week-product__title week-product__title--padding">Вязаные корзинки</h2>
           <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
           <table class="week-product__features">
             <tr class="week-product__features-options">
@@ -79,25 +92,33 @@
               <td class="week-product__features-item">15 см</td>
             </tr>
           </table>
-          <span class="week-product__price">Цена: 990 руб.</span>
-          <button class="button button-order--index" type="submit">заказать</button>
         </div>
         <div class="week-product__photo">
           <picture>
-            <source media="(min-width: 1150px)" srcset="img/desktop/triple-set-desktop.jpg">
-            <source media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet.jpg">
-            <img src="img/mobile/triple-set-mobile.jpg" alt="Вязанные корзинки">
+            <source media="(min-width: 1150px)" type="image/webp" srcset="img/desktop/triple-set-desktop.webp 1x, img/desktop/triple-set-desktop@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/desktop/triple-set-desktop.jpg 1x, img/desktop/triple-set-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/tablet/triple-set-tablet.webp, img/tablet/triple-set-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet.jpg 1x, img/tablet/triple-set-tablet@2x.jpg 2x">
+
+            <source srcset="img/mobile/triple-set-mobile.webp 1x, img/mobile/triple-set-mobile@2x.webp 2x" type="image/webp">
+            <img src="img/mobile/triple-set-mobile.jpg" srcset="img/mobile/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
           </picture>
         </div>
-    </div>
+        <div class="week-product__order">
+          <span class="week-product__price">Цена: 990 руб.</span>
+          <button class="button button-order--index" type="submit">заказать</button>
+        </div>
+      </div>
     </div>
   </section>
+  <div class="zig-zag"></div>
   <section class="about-info">
+
     <div class="wrapper">
-      <div class="zig-zag"></div>
       <div class="about-info__title">
-      <h2 class="title title-tablet">Коротко о нас:</h2>
-        </div>
+        <h2 class="title title-tablet">Коротко о нас:</h2>
+      </div>
       <div class="about-info__wrapper">
         <div class="about-info__flower-wrapper">
           <img src="img/mobile/flower.svg" alt="Экологически чистые материалы"/>
@@ -164,9 +185,8 @@
       <div class="contacts__wrapper">
         <h2 class="title contacts--title">Контакты</h2>
         <div class="contacts__icon">
-          <svg width="47" height="81" viewBox="0 0 47 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.76611 3.86183V42.3812L47 23.072L7.76611 3.86183ZM0 80.9005V0H3.83261V80.9005H0Z"
-                  fill="#63D1BB"/>
+          <svg width="47" height="81">
+          <use xlink:href="img/sprite.svg#flag-icon"></use>
           </svg>
         </div>
         <div class="contacts___email">
@@ -179,11 +199,6 @@
         </div>
         <div class="contacts_map">
           <h2 class="hidden">Наш магазин на карте</h2>
-          <!--                      <picture>-->
-          <!--                        <source media="(min-width: 1150px)" srcset="img/desktop/map-desktop.jpg">-->
-          <!--                        <source media="(min-width: 768px)" srcset="img/tablet/map-tablet.jpg">-->
-          <!--                        <img src="img/mobile/map-mobile@1x.jpg" class="contacts_map&#45;&#45;img" alt="Карта">-->
-          <!--                      </picture>-->
           <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A76c38d182d3898c1e7b16640c349473d020b4517f9b307c7f0321a27b4e2e3f4&amp;source=constructor"
             width="100%" height="457" class="contacts_map--img" alt="Карта"></iframe>
@@ -198,7 +213,10 @@
 </main>
 <footer class="footer">
   <div class="footer__wrapper">
-    <div class="footer-logo"><img src="img/tablet/logo-footer.svg"></div>
+    <div class="footer-logo">
+      <svg width="102" height="34">
+        <use xlink:href="img/sprite.svg#footer-logo"></use>
+    </div>
     <div class="social-wrapper">
       <img src="img/mobile/social-icon__vk.svg" alt="Группа Вконтакте" class="social-wrapper__social-icon"/>
       <img src="img/mobile/social-icon__youtube.svg" alt="Канал на Ютубе" class="social-wrapper__social-icon"/>

@@ -85,10 +85,13 @@
 }
 
 @media (min-width: 768px) and (max-width: 1150px) {
+  .week-product {
+    padding-bottom: 100px;
+  }
   .week-product--wrapper {
     display: grid;
     grid-template-columns: 390px 220px 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     max-height: 570px;
     grid-column-gap: 0;
     grid-row-gap: 0;
@@ -182,7 +185,7 @@
 @media (min-width: 1150px) {
 
   .week-product {
-    padding-bottom: 100px;
+    padding-bottom: 10px;
   }
   .week-product--wrapper {
     display: grid;
@@ -200,8 +203,8 @@
     font-size: 53px;
     line-height: 57px;
     margin: 0;
-    min-width: 545px;
     z-index: 999;
+    grid-column: 2/4;
   }
 
   .week-product__subtitle {

@@ -12,10 +12,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("../../img/mobile/hero-mobile@2x.jpg") no-repeat center;
+    background: url("../img/mobile/hero-mobile.webp") no-repeat center top 15px;
     min-height: 283px;
     min-width: 320px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/mobile/hero-mobile@2x.webp") no-repeat center;
+      background-size: 320px 373px;
+    }
   }
+
 
   .introduce__slogan {
     font-family: @font;
@@ -39,10 +45,16 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background: url("../../img/desktop/hero-desktop.png") no-repeat center;
+    background: url("../img/tablet/hero-tablet.webp") no-repeat center 78px;
     width: 100%;
-    height: 745px;
+    height: 620px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/tablet/hero-tablet@x2.webp") no-repeat center 75px;
+      background-size: 1150px 575px;
+    }
   }
+
 
   .introduce__slogan {
     .font;
@@ -71,8 +83,13 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    height: 745px;
-    background: url("../../img/desktop/hero-desktop.png") no-repeat center;
+    height: 620px;
+    background: url("../img/desktop/hero-desktop.webp") no-repeat center 70px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/desktop/hero-desktop@x2.webp") no-repeat center 65px;
+      background-size: 1150px 590px;
+    }
   }
 
   .introduce__slogan {

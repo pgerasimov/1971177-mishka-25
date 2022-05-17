@@ -8,7 +8,7 @@
 
 @media (min-width: 768px) and (max-width: 1150px) {
   .zig-zag {
-    background: url("../../img/tablet/zigzag-line-tablet.svg") no-repeat;
+    background: url("../../img/tablet/zigzag-line-tablet.svg") repeat-x;
     height: 17px;
     padding-bottom: 55px;
   }
@@ -16,7 +16,7 @@
   .zig-zag--index::after {
     content: "";
     position: absolute;
-    top: 1020px;
+    top: 793px;
     width: 100%;
     height: 24px;
     background-image: url("../../img/desktop/zigzag-fill-desktop.svg");
@@ -28,29 +28,29 @@
 
 @media (min-width: 1150px) {
   .zig-zag {
-    background: url("../../img/desktop/zigzag-line-desktop.svg") no-repeat;
+    background: url("../../img/desktop/zigzag-line-desktop.svg") repeat-x right;
     height: 23px;
-    width: 96%;
+    margin-bottom: 68px;
   }
 
   .zig-zag--index::after {
     content: "";
     position: absolute;
-    top: 1040px;
+    top: 803px;
     width: 100%;
     height: 24px;
     background-image: url("../../img/desktop/zigzag-fill-desktop.svg");
     background-position: center top;
     background-repeat: repeat-x;
-    background-size: auto 134%;
+    background-size: auto;
   }
 
 
   .zig-zag--catalog {
-    background: url("../../img/desktop/zigzag-fill-desktop.svg") no-repeat;
     margin-top: -15px;
     height: 34px;
     z-index: 999;
     position: relative;
+    background: url("../../img/desktop/zigzag-fill-desktop.svg") repeat-x right;
   }
 }

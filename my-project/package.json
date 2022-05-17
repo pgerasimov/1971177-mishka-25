@@ -18,5 +18,9 @@
   "homepage": "https://github.com/pgerasimov/1971177-mishka-25#readme",
   "devDependencies": {
     "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "del": "^6.1.0",
+    "gulp-svgstore": "^9.0.0"
   }
 }

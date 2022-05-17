@@ -20,7 +20,7 @@
     color: #000000;
     border: 1px solid #ececec;
     height: 79px;
-    padding-left: 78px;
+    justify-content: center;
   }
 
   .second-menu__menu-item {
@@ -32,6 +32,7 @@
     color: #000000;
     border: 1px solid #ececec;
     height: 79px;
+    justify-content: flex-start;
   }
 
   .second-menu__search-icon,
@@ -52,12 +53,11 @@
 
   .navigation__menu-button {
     padding-left: 60px;
-    visibility: hidden;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1150px) {
-  .navigation__mobile {
+  .navigation__menu-button {
     display: none;
   }
 
@@ -155,7 +155,7 @@
 }
 
 @media (min-width: 1150px) {
-  .navigation__mobile {
+  .navigation__menu-button {
     display: none;
   }
 

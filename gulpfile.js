@@ -80,7 +80,7 @@ const copy = (done) => {
 
 // Clean
 
-export const clean = () => {
+const clean = () => {
   return del('build');
 };
 

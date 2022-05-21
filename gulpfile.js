@@ -12,6 +12,7 @@ import del from 'del';
 import browser from 'browser-sync';
 
 // Styles
+
 export const styles = () => {
   return gulp.src('source/less/style.less', {sourcemaps: true})
     .pipe(plumber())
@@ -26,6 +27,7 @@ export const styles = () => {
 }
 
 // HTML
+
 const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
@@ -33,6 +35,7 @@ const html = () => {
 }
 
 // Images
+
 const img = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh())
@@ -45,6 +48,7 @@ const copyImages = () => {
 }
 
 // WebP
+
 const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh({
@@ -54,12 +58,14 @@ const createWebp = () => {
 }
 
 // SVG
+
 const svg = () =>
   gulp.src(['source/img/**/*.svg', '!source/img/sprite.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
 // Copy
+
 const copy = (done) => {
   gulp.src([
     'source/img/sprite.svg',
@@ -73,11 +79,13 @@ const copy = (done) => {
 }
 
 // Clean
+
 const clean = () => {
   return del('build');
 };
 
 // Server
+
 const server = (done) => {
   browser.init({
     server: {
@@ -89,6 +97,7 @@ const server = (done) => {
   });
   done();
 }
+
 // Reload
 
 const reload = (done) => {
@@ -97,6 +106,7 @@ const reload = (done) => {
 }
 
 // Watcher
+
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   // gulp.watch('source/js/script.js', gulp.series(scripts));
@@ -104,6 +114,7 @@ const watcher = () => {
 }
 
 // Build
+
 const build = gulp.series(
   clean,
   copy,
@@ -117,6 +128,7 @@ const build = gulp.series(
 );
 
 // Default
+
 export default gulp.series(
   clean,
   copy,

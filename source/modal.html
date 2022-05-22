@@ -43,7 +43,6 @@
   </div>
   <div class="header__wrapper">
     <nav class="navigation">
-      <!--    LOGO-->
       <div class="navigation__logo-wrapper">
         <a class="link" href="index.html" aria-label="Мишка">
           <svg class="header__logo-mobile" width="86" height="35">
@@ -54,28 +53,27 @@
           <svg class="header__logo-tablet" width="114" height="46">
             <use xlink:href="img/sprite.svg#tablet-logo"></use>
           </svg>
-          <img src="img/mobile/menu-close.svg" class="navigation__menu-button" alt="Закрыть меню">
+          <img src="img/mobile/menu-close.svg" class="navigation__menu-button hidden" alt="Закрыть меню">
           <svg class="header__logo-desktop" width="149" height="72">
             <use xlink:href="img/sprite.svg#desktop-logo"></use>
           </svg>
         </a>
       </div>
-      <div class="hamburger-menu"></div>
-      <!--      FIRST MENU LIST-->
+
+      <!--      add display-none class to navigation__first-menu to hide menu in mobile with js-->
       <ul class="navigation__first-menu">
-        <li class="navigation__menu-item">Каталог товаров</li>
+        <li class="navigation__menu-item"><a href="catalog.html" class="menu__link">Каталог товаров</a> </li>
         <li
           class="navigation__menu-item navigation__menu-item--padding navigation__menu-item--border navigation__menu-item--tablet-border">
-          Вязание на
-          заказ
+          <a href="form.html" class="menu__link">Вязание на заказ</a>
         </li>
       </ul>
-      <!--      SECOND BOTTOM MENU-->
       <ul class="navigation__bottom-menu">
         <li class="bottom-menu__item">Новые поступления</li>
         <li class="bottom-menu__item bottom-menu__item--padding">Распродажа</li>
       </ul>
-      <!--      RIGHT MENU-->
+
+      <!--      add display-none class to navigation__second-menu to hide menu in mobile with js-->
       <ul class="navigation__second-menu">
         <li
           class="second-menu__menu-item second-menu__menu-item--border navigation__menu-item--border second-menu__search-icon--width">
@@ -91,7 +89,7 @@
           Корзина: пока пуста
         </li>
       </ul>
-      <!--      BOTTOM RIGHT MENU-->
+
       <div class="navigation__additional-info">
         <p>Бесплатная доставка по России</p></div>
     </nav>

@@ -9,7 +9,7 @@
   <link rel="preload" href="/img/desktop/hero-desktop.webp" as="image" crossorigin="anonymous">
   <link rel="preload" href="/fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="/fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="build/css/style.min.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/style.min.css"/>
   <title>Mishka - Милые штуки ручнойработы для дома</title>
 </head>
 <body>
@@ -27,46 +27,12 @@
           <svg class="header__logo-tablet" width="114" height="46">
             <use xlink:href="img/sprite.svg#tablet-logo"></use>
           </svg>
-          <img src="img/mobile/menu-close.svg" class="navigation__menu-button" alt="Закрыть меню">
+          <img src="img/mobile/menu.svg" class="navigation__menu-button" alt="Закрыть меню">
           <svg class="header__logo-desktop" width="149" height="72">
             <use xlink:href="img/sprite.svg#desktop-logo"></use>
           </svg>
         </a>
       </div>
-      <div class="hamburger-menu"></div>
-      <!--      FIRST MENU LIST-->
-      <ul class="navigation__first-menu">
-        <li class="navigation__menu-item">Каталог товаров</li>
-        <li
-          class="navigation__menu-item navigation__menu-item--padding navigation__menu-item--border navigation__menu-item--tablet-border">
-          Вязание на
-          заказ
-        </li>
-      </ul>
-      <!--      SECOND BOTTOM MENU-->
-      <ul class="navigation__bottom-menu">
-        <li class="bottom-menu__item">Новые поступления</li>
-        <li class="bottom-menu__item bottom-menu__item--padding">Распродажа</li>
-      </ul>
-      <!--      RIGHT MENU-->
-      <ul class="navigation__second-menu">
-        <li
-          class="second-menu__menu-item second-menu__menu-item--border navigation__menu-item--border second-menu__search-icon--width">
-          <svg width="18" height="18" class="second-menu__search-icon">
-            <use xlink:href="img/sprite.svg#search-icon"></use>
-          </svg>
-          <span class="second-menu__search-icon--text">Поиск по сайту</span>
-        </li>
-        <li class="second-menu__menu-item second-menu navigation__menu-item--border second-menu__menu-item--width">
-          <svg width="21" height="18" class="second-menu__cart-icon">
-            <use xlink:href="img/sprite.svg#cart-icon"></use>
-          </svg>
-          Корзина: пока пуста
-        </li>
-      </ul>
-      <!--      BOTTOM RIGHT MENU-->
-      <div class="navigation__additional-info">
-        <p>Бесплатная доставка по России</p></div>
     </nav>
     <section class="header-section">
       <div class="header-section__title-wrapper">
@@ -75,11 +41,11 @@
       <div class="zig-zag--catalog"></div>
     </section>
   </div>
-</header>
+
 <main>
   <section class="form">
     <div class="form__wrapper">
-      <p class="form__title-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+      <p class="form__title-text">Мы будем рады воплотить в жизнь <br> ваши пожелания! Заполните простую форму заказа и мы
         свяжемся с вами, чтобы уточнить детали.
       </p>
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -108,27 +74,27 @@
         <ul class="search-filter__options-type search-filter__options-type--row">
           <li>
             <input type="checkbox" name="white" id="white" checked/>
-            <label for="white" class="search-filter__color">Белый</label>
+            <label for="white" class="search-filter__color search-filter__color--padding">Белый</label>
           </li>
           <li>
             <input type="checkbox" name="gray" id="gray" checked/>
-            <label for="gray" class="search-filter__color">Серый</label>
+            <label for="gray" class="search-filter__color search-filter__color--padding">Серый</label>
           </li>
           <li>
             <input type="checkbox" name="tiffany" id="tiffany"/>
-            <label for="tiffany" class="search-filter__color">Тиффани</label>
+            <label for="tiffany" class="search-filter__color search-filter__color--padding">Тиффани</label>
           </li>
           <li>
             <input type="checkbox" name="black" id="black"/>
-            <label for="black" class="search-filter__color">Черный</label>
+            <label for="black" class="search-filter__color search-filter__color--padding">Черный</label>
           </li>
           <li>
             <input type="checkbox" name="pink" id="pink"/>
-            <label for="pink" class="search-filter__color">Розовый</label>
+            <label for="pink" class="search-filter__color search-filter__color--padding">Розовый</label>
           </li>
           <li>
             <input type="checkbox" name="orange" id="orange"/>
-            <label for="orange" class="search-filter__color">Оранжевый</label>
+            <label for="orange" class="search-filter__color search-filter__color--last-padding">Оранжевый</label>
           </li>
         </ul>
       </fieldset>

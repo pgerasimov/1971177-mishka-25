@@ -15,8 +15,8 @@ input[type="radio"]:not(:checked) + label {
 input[type="radio"]:checked + label::before,
 input[type="radio"]:not(:checked) + label::before {
   content: "";
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 37px;
   border: 2px solid #444444;
   background-color: #ffffff;
   border-radius: 100%;
@@ -72,10 +72,10 @@ input[type="checkbox"]:checked + label::before,
 input[type="checkbox"]:not(:checked) + label::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 38px;
-  height: 38px;
+  left: 3px;
+  top: -10px;
+  width: 34px;
+  height: 34px;
   border: 2px solid #444444;
   background-color: #ffffff;
 }
@@ -103,7 +103,7 @@ input[type="checkbox"]:checked + label::after,
 input[type="checkbox"]:not(:checked) + label::after {
   border-left: 2px solid #000000;
   border-bottom: 2px solid #000000;
-  transform: rotate(-54deg);
+  transform: rotate(-45deg);
   content: "";
   position: absolute;
 }
@@ -112,22 +112,22 @@ input[type="checkbox"]:not(:checked) + label::after {
   opacity: 0;
 }
 
+input[type="checkbox"]:focus + label::before {
+  outline: none;
+}
+
 input[type="checkbox"]:checked + label::after {
   opacity: 1;
-}
 
-input[type="checkbox"]:hover {
-  //background-color: #ff5757;
 }
-
 
 @media (max-width: 767px) {
   input[type="checkbox"]:checked + label::after,
   input[type="checkbox"]:not(:checked) + label::after {
-    left: 8px;
-    top: 9px;
-    width: 22px;
-    height: 13px;
+    left: 11px;
+    top: -1px;
+    width: 19px;
+    height: 12px;;
   }
 
   input[type="checkbox"]:checked:focus + label::before,
@@ -137,7 +137,7 @@ input[type="checkbox"]:hover {
 
   input[type="checkbox"]:checked + label,
   input[type="checkbox"]:not(:checked) + label {
-    padding-left: 80px;
+    padding-left: 64px;
   }
 
   input[type="radio"]:checked:focus + label::before,
@@ -147,20 +147,20 @@ input[type="checkbox"]:hover {
 
   input[type="radio"]:checked + label::after,
   input[type="radio"]:not(:checked) + label::after {
-    left: 14px;
-    top: 14px;
+    left: 15px;
+    top: 8px;
   }
 
   input[type="radio"]:checked + label,
   input[type="radio"]:not(:checked) + label {
-    padding-left: 80px;
+    padding-left: 63px;
   }
 
   input[type="radio"]:checked + label::before,
   input[type="radio"]:not(:checked) + label::before {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 2px;
+    top: -3px;
   }
 }
 

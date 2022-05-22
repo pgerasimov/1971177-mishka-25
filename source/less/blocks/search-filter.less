@@ -12,6 +12,7 @@
     line-height: 16px;
     text-transform: uppercase;
     color: #63d1bb;
+    padding-left: 3px;
   }
 
   .search-filter__divider {
@@ -19,8 +20,9 @@
     border-top: 1px solid #62d1ba;
     min-width: 100px;
     align-self: center;
-    margin-top: -10px;
-    margin-left: 80px;
+    margin-top: -9px;
+    margin-left: 64px;
+    width: 200px;
   }
 
   .search-filter__option {
@@ -59,12 +61,20 @@
     color: rgba(0, 0, 0, 0.3);
   }
 
-  .search-filter__color {
-    padding-bottom: 40px;
+  .search-filter__color{
+
     .font;
     font-weight: 700;
     font-size: 17px;
     line-height: 18px;
+  }
+
+  .search-filter__color--padding {
+    padding-bottom: 40px;
+  }
+
+  .search-filter__color--last-padding {
+    padding-bottom: 15px;
   }
 
   .search-filter__option--padding {
@@ -72,25 +82,30 @@
   }
 
   .search-filter__item {
-    padding-bottom: 25px;
+    padding-bottom: 12px;
   }
 
   .search-filter__options-type {
     list-style: none;
-    padding: 40px 0;
+    padding: 40px 0 27px 0;
+    margin: 0;
+  }
+
+  label {
+    padding: 0;
     margin: 0;
   }
 
   .search-filter__option-personal {
     padding-bottom: 10px;
-    width: 260px;
+    padding-left: 3px;
   }
 
   .search-filter__wrapper {
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
-    padding-top: 22px;
+    padding-top: 18px;
     border: 0;
     border-bottom: 2px solid #000000;
     min-width: 100%;
@@ -104,6 +119,7 @@
     color: #000000;
     opacity: 0.3;
     border: 0;
+    padding-top: 19px;
   }
 
   .search-filter__personal-data {

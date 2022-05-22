@@ -14,7 +14,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 336px;
     border: 1px solid #c6c6c6;
@@ -23,13 +22,6 @@
     top: 100px;
     background-color: rgba(255, 255, 255);
     justify-content: flex-start;
-  }
-
-  .modal-card__title {
-    .font;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 30px;
   }
 
   .size-option {
@@ -71,7 +63,7 @@
     .font;
     font-weight: 700;
     font-size: 17px;
-    line-height: 16px
+    line-height: 16px;
   }
 
   .modal-card__radio--s-size:checked + label::before,
@@ -82,7 +74,6 @@
   .modal-card__radio--m-size:checked + label::before,
   .modal-card__radio--m-size:not(:checked) + label::before {
     content: "M";
-
   }
 
   .modal-card__radio--l-size:checked + label::before,
@@ -92,14 +83,12 @@
   }
 
   .modal-card__radio:checked + label::before,
-  .modal-card__radio:not(:checked) + label::before {;
+  .modal-card__radio:not(:checked) + label::before {
     padding: 13px 33px;
     width: 82px;
     height: 52px;
-    border: 2px solid rgba(68,	68,	68, 0.1);
-
+    border: 2px solid rgba(68, 68, 68, 0.1);
   }
-
 
   .modal-card__radio:checked:focus + label::before,
   .modal-card__radio:not(:checked):focus + label::before {
@@ -115,10 +104,6 @@
 
   .modal-card__radio:checked + label::after {
     opacity: 1;
-  }
-
-  .modal-card__radio:hover {
-    //background-color: #ff5757;
   }
 
   .modal-card__title {

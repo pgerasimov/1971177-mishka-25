@@ -166,8 +166,8 @@
 @media (min-width: 768px) and (max-width: 1150px) {
   .search-filter__form-checkbox:checked + label::after,
   .search-filter__form-checkbox:not(:checked) + label::after {
-    left: 8px;
-    top: 9px;
+    left: 10px;
+    top: -3px;
     width: 22px;
     height: 13px;
   }
@@ -190,14 +190,16 @@
   }
 
   .search-filter__form-radio:checked + label::after,
+  .search-filter__form-radio:checked + label::after,
   .search-filter__form-radio:not(:checked) + label::after {
-    left: 14px;
-    top: 14px;
+    left: 12px;
+    top: 12px;
   }
 
   .search-filter__form-radio:checked + label,
   .search-filter__form-radio:not(:checked) + label {
     padding-left: 80px;
+    padding-bottom: 50px;
   }
 
   .search-filter__form-radio:checked + label::before,

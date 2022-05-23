@@ -21,12 +21,12 @@
   <div class="header__wrapper">
     <nav class="navigation">
       <div class="navigation__logo-wrapper">
-        <a class="link" href="index.html" aria-label="Мишка">
+        <a class="menu-link" href="index.html" aria-label="Мишка">
           <svg class="header__logo-mobile" width="86" height="35">
             <use xlink:href="img/sprite.svg#mobile-logo"></use>
           </svg>
         </a>
-        <a class="link" href="index.html" aria-label="Мишка">
+        <a class="menu-link" href="index.html" aria-label="Мишка">
           <svg class="header__logo-tablet" width="114" height="46">
             <use xlink:href="img/sprite.svg#tablet-logo"></use>
           </svg>
@@ -39,27 +39,26 @@
 
 <!--      add display-none class to navigation__first-menu to hide menu in mobile with js-->
       <ul class="navigation__first-menu">
-        <li class="navigation__menu-item"><a href="catalog.html" class="menu__link">Каталог товаров</a> </li>
+        <li class="navigation__menu-item"><a href="catalog.html" class="menu-link">Каталог товаров</a> </li>
         <li
-          class="navigation__menu-item navigation__menu-item--padding navigation__menu-item--border navigation__menu-item--tablet-border">
-          <a href="form.html" class="menu__link">Вязание на заказ</a>
+          class="navigation__menu-item navigation__menu-item--padding navigation__item-border navigation__menu-item--tablet-border">
+          <a href="form.html" class="menu-link">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="navigation__bottom-menu">
-        <li class="bottom-menu__item">Новые поступления</li>
-        <li class="bottom-menu__item bottom-menu__item--padding">Распродажа</li>
+        <li class="navigation__bottom-menu-item">Новые поступления</li>
+        <li class="navigation__bottom-menu-item navigation__bottom-menu-item--padding">Распродажа</li>
       </ul>
-
       <!--      add display-none class to navigation__second-menu to hide menu in mobile with js-->
       <ul class="navigation__second-menu">
         <li
-          class="second-menu__menu-item second-menu__menu-item--border navigation__menu-item--border second-menu__search-icon--width">
-          <svg width="18" height="18" class="second-menu__search-icon">
+          class="navigation__second-menu-item navigation__item-border">
+          <svg width="18" height="18" class="navigation__search-icon">
             <use xlink:href="img/sprite.svg#search-icon"></use>
           </svg>
-          <span class="second-menu__search-icon--text">Поиск по сайту</span>
+          <span class="navigation__search-icon-text">Поиск по сайту</span>
         </li>
-        <li class="second-menu__menu-item second-menu navigation__menu-item--border second-menu__menu-item--width">
+        <li class="navigation__second-menu-item second-menu navigation__item-border navigation__menu-item-width">
           <svg width="21" height="18" class="second-menu__cart-icon">
             <use xlink:href="img/sprite.svg#cart-icon"></use>
           </svg>
@@ -80,33 +79,33 @@
   </section>
   <section class="additional-menu">
     <div class="additional-menu__wrapper">
-      <a class="link" href="catalog.html">
+      <a class="menu-link" href="catalog.html">
         <div class="additional-menu__interior">
           <span class="additional-menu__interior-text">Предметы интерьера</span>
-          <svg width="40" height="62" class="additional-menu__icon--padding">
+          <svg width="40" height="62" class="additional-menu__icon-padding">
             <use xlink:href="img/sprite.svg#interior"></use>
           </svg>
         </div>
       </a>
-      <a class="link" href="catalog.html">
+      <a class="menu-link" href="catalog.html">
         <div class="additional-menu__toys">
           <span class="additional-menu__toy-text">Детские игрушки</span>
-          <svg width="60" height="60" class="additional-menu__icon--padding">
+          <svg width="60" height="60" class="additional-menu__icon-padding">
             <use xlink:href="img/sprite.svg#toy-icon"></use>
           </svg>
         </div>
       </a>
     </div>
-    <div class="zig-zag--index"></div>
+    <div class="additional-menu__zig-zag__index"></div>
   </section>
   <section class="week-product">
     <div class="wrapper">
-      <div class="week-product--wrapper">
+      <div class="week-product___wrapper">
         <div class="week-product__title">
           <h2 class="week-product__title week-product__title--padding">Вязаные корзинки</h2>
         </div>
         <div class="week-product__subtitle">
-          <span class="week-product__subtitle-text">товар<span class="week-product__subtitle--nbsp">&nbsp;&nbsp;</span>недели</span>
+          <span class="week-product__subtitle-text">товар<span>&nbsp;&nbsp;</span>недели</span>
         </div>
         <div class="week-product__description">
           <p>Экологически чистая пряжа,<br> ручная работа. Доступны в шести расцветках и трёх размерах.</p>
@@ -144,7 +143,7 @@
         </div>
         <div class="week-product__order">
           <span class="week-product__price">Цена: 990 руб.</span>
-          <button class="button button-order--index" type="submit">заказать</button>
+          <button class="button button-order-index" type="submit">заказать</button>
         </div>
       </div>
     </div>
@@ -196,7 +195,7 @@
   </section>
   <section class="reviews">
     <div class="wrapper">
-      <div class="reviews--wrapper">
+      <div class="reviews__wrapper">
         <div class="reviews__header">
           <h2 class="title title--padding">Отзывы</h2>
         </div>
@@ -233,7 +232,7 @@
   <section class="contacts">
     <div class="wrapper">
       <div class="contacts__wrapper">
-        <h2 class="title contacts--title">Контакты</h2>
+        <h2 class="title contacts-title">Контакты</h2>
         <div class="contacts__icon">
           <svg width="47" height="81">
             <use xlink:href="img/sprite.svg#flag-icon"></use>
@@ -247,14 +246,14 @@
           <span class="contacts__address-title">адрес:</span>
           <span class="contacts__address-text">г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101</span>
         </div>
-        <div class="contacts_map">
+        <div class="contacts__map">
           <h2 class="hidden">Наш магазин на карте</h2>
           <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A76c38d182d3898c1e7b16640c349473d020b4517f9b307c7f0321a27b4e2e3f4&amp;source=constructor"
-            class="contacts_map--img"></iframe>
+            class="contacts__map-img"></iframe>
         </div>
-        <div class="contacts_map__button">
-          <button class="button button__contact" type="submit">напишите нам</button>
+        <div class="contacts__map-button">
+          <button class="button contacts__button" type="submit">напишите нам</button>
         </div>
       </div>
     </div>
@@ -280,7 +279,7 @@
     </div>
     <div class="developer">
       <h2 class="developer__title">Разработано</h2>
-      <svg width="27" height="35"  class="social-wrapper__social-icon">
+      <svg width="27" height="35"  class="developer__social-icon">
         <use xlink:href="img/sprite.svg#academy-logo"></use>
       </svg>
     </div>

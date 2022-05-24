@@ -1,3 +1,30 @@
+.additional-menu__interior > svg,
+.additional-menu__toys > svg{
+  fill: #149080;
+  opacity: 0.5;
+}
+
+.additional-menu__interior:hover,
+.additional-menu__interior:active {
+  background-color: #59D5BC;
+}
+
+.additional-menu__toys:hover,
+.additional-menu__toys:active {
+  background-color: #46c1ae;
+}
+
+.additional-menu__interior:hover > svg,
+.additional-menu__toys:hover > svg {
+  opacity: 0.7;
+}
+
+.additional-menu__interior:active > svg,
+.additional-menu__toys:active > svg{
+  opacity: 0.3;
+}
+
+
 @media (max-width: 767px) {
   .additional-menu__interior {
     grid-area: 2 / 1 / 3 / 2;

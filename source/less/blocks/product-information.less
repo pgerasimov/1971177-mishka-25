@@ -1,3 +1,34 @@
+.product-information:hover,
+.product-video:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-information:active,
+.product-video:active {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-information__title:hover {
+  opacity: 0.6;
+}
+
+.product-information__title:active {
+  opacity: 0.3;
+}
+.product-price__add-to-cart {
+  opacity: 0.2;
+}
+.product-price__add-to-cart:hover {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.product-price__add-to-cart:active {
+  opacity: 0.3;
+  fill: #63d1bb;
+}
+
+
 @media (max-width: 767px) {
   .product-information {
     .font;
@@ -15,6 +46,7 @@
 
   .product-price__add-to-cart {
     padding: 0 7px 2px;
+    opacity: 0.2;
   }
 
   .product-information__description {

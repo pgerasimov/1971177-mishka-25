@@ -1,3 +1,4 @@
+
 @media (max-width: 767px) {
   .video {
     background-image: url("/img/mobile/video-mobile.jpg");
@@ -78,18 +79,45 @@
     }
   }
 
-  .video::after {
+  .video__play-icon {
     position: relative;
-    left: 260px;
-    top: 174px;
-    content: url("/img/mobile/play-icon.svg");
+    left: 262px;
+    top: 210px;
   }
 
-  .video::before {
-    z-index: 999;
+  .video__play-symbol {
     position: relative;
-    left: 335px;
-    top: 155px;
-    content: url("/img/mobile/play-symbol.svg");
+    z-index: 999;
+    top: 191px;
+    left: 336px;
   }
+
+  .video__play-wrapper:hover > .video__play-symbol {
+    width: 31*1.2px;
+    height: 37*1.2px;
+    top: 193px;
+    left: 334px;
+  }
+
+  .video__play-wrapper:hover > .video__play-icon {
+    width: 101*1.2px;
+    height: 77*1.2px;
+    left: 246px;
+    top: 216px;
+  }
+
+  .video__play-wrapper:active > .video__play-symbol {
+    width: 31*0.8px;
+    height: 37*0.8px;
+    top: 199px;
+    left: 338px;
+  }
+
+  .video__play-wrapper:active > .video__play-icon {
+    width: 101*0.8px;
+    height: 77*0.8px;
+    left: 277px;
+    top: 213px;
+  }
+
 }

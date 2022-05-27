@@ -1,3 +1,12 @@
+.social-wrapper__social-icon:hover {
+  fill: #46c1ae;
+}
+
+.social-wrapper__social-icon:active {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
 @media (max-width: 767px) {
   .social-wrapper {
     justify-self: center;
@@ -7,8 +16,12 @@
     align-items: center;
     grid-area: 1 / 1 / 2 / 2;
     border-bottom: 1px solid #e5e5e5;
-    padding: 10% 0;
-    width: 80%;
+    padding: 30px 0 30px 0;
+  }
+
+  .social-wrapper__social-icon:not(:first-child),
+  .developer__social-icon {
+    padding-left: 31px;
   }
 }
 
@@ -17,11 +30,11 @@
     grid-area: 1 / 2 / 2 / 3;
     display: flex;
     align-items: center;
-    justify-content: center;
+    
   }
 
   .social-wrapper__social-icon:not(:first-child) {
-    padding-left: 35px;
+    padding-left: 32px;
   }
 }
 
@@ -34,6 +47,6 @@
   }
 
   .social-wrapper__social-icon:not(:first-child) {
-    padding-left: 35px;
+    padding-left: 32px;
   }
 }

@@ -1,8 +1,37 @@
+.search-filter__placeholder {
+  opacity: 0.3;
+}
+
+.search-filter__input-wrapper:hover {
+  border-color: #62d1ba;
+}
+
+.search-filter__input-wrapper:active > .search-filter__placeholder {
+  border-color: #26d1ba;
+  color: #444444;
+  opacity: 1;
+}
+
+.search-filter__additional-data:hover {
+  border-color: #62d1ba;
+  opacity: 1;
+}
+
+.search-filter__additional-data:active,
+.search-filter__additional-data:active::placeholder {
+  border-color: #62d1ba;
+  color: #000000;
+}
+
 @media (max-width: 767px) {
   .search-filter {
     border: 0;
     margin: 0;
     padding: 0;
+  }
+
+  .search-filter-contact-wrapper {
+    padding-top: 9px;
   }
 
   .search-filter__title {
@@ -12,15 +41,20 @@
     line-height: 16px;
     text-transform: uppercase;
     color: #63d1bb;
+    padding-left: 3px;
+  }
+
+  .search-filter__title-margin {
+    margin-top: 30px;
   }
 
   .search-filter__divider {
-    height: 1px;
     border-top: 1px solid #62d1ba;
     min-width: 100px;
     align-self: center;
-    margin-top: -10px;
-    margin-left: 80px;
+    margin-top: -14px;
+    margin-left: 64px;
+    width: 200px;
   }
 
   .search-filter__option {
@@ -39,7 +73,11 @@
   }
 
   .search-filter__divider--padding {
-    padding-top: 25px;
+    padding-top: 30px;
+  }
+
+  .search-filter--padding {
+    margin-top: 16px;
   }
 
   .search-filter__additional-data {
@@ -60,11 +98,18 @@
   }
 
   .search-filter__color {
-    padding-bottom: 40px;
     .font;
     font-weight: 700;
     font-size: 17px;
     line-height: 18px;
+  }
+
+  .search-filter__color--padding {
+    padding-bottom: 40px;
+  }
+
+  .search-filter__color--last-padding {
+    padding-bottom: 15px;
   }
 
   .search-filter__option--padding {
@@ -72,25 +117,30 @@
   }
 
   .search-filter__item {
-    padding-bottom: 25px;
+    padding-bottom: 12px;
   }
 
   .search-filter__options-type {
     list-style: none;
-    padding: 40px 0;
+    padding: 40px 0 27px 0;
+    margin: 0;
+  }
+
+  label {
+    padding: 0;
     margin: 0;
   }
 
   .search-filter__option-personal {
     padding-bottom: 10px;
-    width: 260px;
+    padding-left: 3px;
   }
 
   .search-filter__wrapper {
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
-    padding-top: 22px;
+    padding-top: 23px;
     border: 0;
     border-bottom: 2px solid #000000;
     min-width: 100%;
@@ -102,8 +152,12 @@
     font-size: 17px;
     line-height: 18px;
     color: #000000;
-    opacity: 0.3;
     border: 0;
+    padding-top: 18px;
+  }
+
+  .search-filter__placeholder--padding {
+    padding: 0;
   }
 
   .search-filter__personal-data {
@@ -112,6 +166,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 15px;
+  }
+
+  .search-filter__title--additional-padding {
+    padding-top: 18px;
+  }
+
+  .search-filter__divider--width {
+    width: 184px;
+    margin-left: 83px;
+    margin-top: -14px;
   }
 }
 
@@ -119,31 +184,38 @@
   .search-filter {
     border: 0;
     margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: row;
   }
 
   .search-filter--padding {
-    padding: 50px 0;
+    margin-top: 80px;
+    padding: 0;
   }
 
-  .search-filter__contacts--padding {
-    padding-top: 50px;
+
+  .search-filter__personal-padding {
+    padding-top: 65px;
   }
 
-  .search-filter_title--wrapper {
+  .search-filter-contacts-padding {
+    padding-top: 49px;
+  }
+
+  .search-filter__title-wrapper {
     display: flex;
+
   }
 
-  .search-filter--background {
+  .search-filter-background {
     background-color: #f1f1f1;
+    padding-top: 50px;
   }
 
   .search-filter__option {
     .font;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 19px;
     line-height: 18px;
     color: #000000;
   }
@@ -171,28 +243,24 @@
     line-height: 16px;
     text-transform: uppercase;
     color: #63d1bb;
-    padding-left: 50px;
-    padding-right: 90px;
-  }
-
-  .search-filter__title-width {
-    width: 40px;
+    padding-left: 44px;
+    padding-right: 93px;
   }
 
   .search-filter__personal-data {
-    padding-left: 50px;
+    padding-left: 29px;
     margin: 0;
   }
 
-  .search-filter__item {
-    padding-bottom: 40px;
+  .search-filter__item:not(:first-child) {
+    padding-bottom: 20px;
   }
 
   .search-filter__options-type--row {
     flex-direction: row;
   }
 
-  .search-filter_contact-wrapper {
+  .search-filter-contact-wrapper {
     background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
@@ -205,8 +273,9 @@
     padding-top: 30px;
   }
 
-  .search-filter__wrapper--padding {
+  .search-filter__wrapper-padding {
     padding: 0;
+    list-style: none;
   }
 
   .search-filter__input-wrapper {
@@ -220,11 +289,11 @@
   .search-filter__label-wrapper {
     padding-right: 24px;
     min-width: 100px;
-    padding-top: 10px;
+    padding-bottom: 20px;
   }
 
-  .search-filter__contacts--width {
-    width: 500px;
+  .search-filter__contacts-width {
+    width: 480px;
   }
 
   .search-filter__placeholder {
@@ -234,6 +303,11 @@
     line-height: 18px;
     color: #000000;
     border: 0;
+    background-color: transparent;
+  }
+
+  .search-filter__title-width {
+    width: 60px;
   }
 
   .search-filter__additional-data {
@@ -253,15 +327,16 @@
     color: rgba(0, 0, 0, 0.3);
   }
 
-  .search-filer__additional-data--padding {
-    padding-left: 50px;
+  .additional-data-padding {
+    padding-left: 43px;
+    margin-top: -41px;
   }
 
-  .search-filter__order-wrapper {
+  .search-filter-order-wrapper {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 0 50px 50px 50px;
+    padding: 44px 50px 44px 52px;
   }
 }
 
@@ -274,22 +349,35 @@
     flex-direction: row;
   }
 
+  .search-filter__personal-padding {
+    padding-top: 35px;
+  }
+
   .search-filter--padding {
-    padding: 50px 0;
+    padding: 15px 0 29px
   }
 
-  .search-filter__contacts--padding {
-    padding-top: 50px;
+  .search-filter-contacts-padding {
+    padding-top: 70px;
   }
 
-  .search-filter_title--wrapper {
+  .search-filter__title-wrapper {
     display: flex;
+    margin-left: 20px;
   }
 
-  .search-filter--background {
+  .search-filter-background {
     background-color: #f1f1f1;
     display: flex;
-    padding: 0;
+    padding-top: 31px;
+    margin-top: -3px;
+    margin-bottom: 19px;
+    height: 194px;
+  }
+
+  .search-filter__title-color {
+    padding-left: 10px;
+    padding-top: 10px
   }
 
   .search-filter__option {
@@ -323,11 +411,11 @@
     line-height: 16px;
     text-transform: uppercase;
     color: #63d1bb;
-    padding: 0 60px 0 90px;
+    padding: 0 39px 0 90px;
   }
 
   .search-filter__title-width {
-    width: 40px;
+    width: 60px;
   }
 
   .search-filter__personal-data {
@@ -336,19 +424,19 @@
   }
 
   .search-filter__item {
-    padding-bottom: 40px;
+    padding-bottom: 54px;
   }
 
   .search-filter__options-type--row {
     flex-direction: row;
   }
 
-  .search-filter_contact-wrapper {
+  .search-filter-contact-wrapper {
     background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 75px;
   }
 
   .search-filter__wrapper {
@@ -356,8 +444,9 @@
     padding-top: 30px;
   }
 
-  .search-filter__wrapper--padding {
+  .search-filter__wrapper-padding {
     padding: 0;
+    list-style: none;
   }
 
   .search-filter__input-wrapper {
@@ -371,10 +460,9 @@
   .search-filter__label-wrapper {
     padding-right: 24px;
     min-width: 100px;
-    padding-top: 10px;
   }
 
-  .search-filter__contacts--width {
+  .search-filter__contacts-width {
     width: 700px;
   }
 
@@ -404,14 +492,19 @@
     color: rgba(0, 0, 0, 0.3);
   }
 
-  .search-filer__additional-data--padding {
-    padding-left: 50px;
+  .additional-data-padding {
+    padding-left: 38px;
   }
 
-  .search-filter__order-wrapper {
+  .search-filter-order-wrapper {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    padding-bottom: 70px;
+    padding-bottom: 47px;
+    padding-top: 25px;
+  }
+
+  .search-filter__placeholder-background {
+    background-color: transparent;
   }
 }

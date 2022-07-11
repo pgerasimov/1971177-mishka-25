@@ -5,3 +5,9 @@
 
 ---
 
+Technology:
+
+- HTML
+- CSS
+- LESS
+- JS
